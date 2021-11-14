@@ -21,8 +21,8 @@ namespace RosSharp.RosBridgeClient
     {
         public Transform PublishedTransform;
 
-        public Vector3 position;
-        public Quaternion rotation;
+        private Vector3 position;
+        private Quaternion rotation;
         private bool isMessageReceived;
 
         protected override void Start()

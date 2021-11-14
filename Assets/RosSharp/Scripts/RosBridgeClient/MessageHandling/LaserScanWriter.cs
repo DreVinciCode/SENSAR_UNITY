@@ -27,16 +27,22 @@ namespace RosSharp.RosBridgeClient
         private LaserScanVisualizer[] laserScanVisualizers;
 
         private void Update()
-        {
+        {  
             laserScanVisualizers = GetComponents<LaserScanVisualizer>();
             if (isReceived)
+            {
                 if (laserScanVisualizers != null)
+                {
                     foreach (LaserScanVisualizer laserScanVisualizer in laserScanVisualizers)
+                    {
                         laserScanVisualizer.SetSensorData(gameObject.transform, directions, ranges, range_min, range_max);
+                    }
+                }
+            }
 
             isReceived = false;
         }
-
+        
         public void Write(MessageTypes.Sensor.LaserScan laserScan)
         {
             ranges = new float[laserScan.ranges.Length];
