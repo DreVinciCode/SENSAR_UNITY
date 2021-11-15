@@ -33,10 +33,16 @@ namespace RosSharp.RosBridgeClient
 
         public ManualResetEvent IsConnected { get; private set; }
 
-        public virtual void Awake()
+
+        public void RosConnect()
         {
             IsConnected = new ManualResetEvent(false);
             new Thread(ConnectAndWait).Start();
+        }
+        public virtual void Awake()
+        {
+            //IsConnected = new ManualResetEvent(false);
+            //new Thread(ConnectAndWait).Start();
         }
 
         protected void ConnectAndWait()

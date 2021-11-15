@@ -7,19 +7,26 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class DigitalDisplay : MonoBehaviour
+public class IPAddressInput : MonoBehaviour
 {
     public TMP_Text IPDisplay;
     public GameObject ContinueButton;
 
-    private string _IPAddress;
+    private string _iPAddress = "192.168.0.1";
 
     private void Start()
     {
-        _IPAddress = "192.168.0.1";
-        IPDisplay.text = _IPAddress;
+        IPDisplay.text = _iPAddress;
+    }
 
+    public void AddDigitSequence()
+    {     
         PushButtons.ButtonPressed += AddDigitToIPSequence;
+    }
+
+    public void RemoveDigitSequence()
+    {
+        PushButtons.ButtonPressed -= AddDigitToIPSequence;
     }
 
     public bool ValidateIPv4(string ipString)
@@ -42,67 +49,67 @@ public class DigitalDisplay : MonoBehaviour
 
     private void AddDigitToIPSequence(string digitsEntered)
     {
-        if(_IPAddress.Length > 15)
+        if(_iPAddress.Length > 15)
         {
-            _IPAddress = _IPAddress.Substring(0, _IPAddress.Length - 1);
+            _iPAddress = _iPAddress.Substring(0, _iPAddress.Length - 1);
         }
 
         switch (digitsEntered)
         {
             case "0":
-                _IPAddress += "0";
-                IPDisplay.text = _IPAddress;
+                _iPAddress += "0";
+                IPDisplay.text = _iPAddress;
                 break;
 
             case "1":
-                _IPAddress += "1";
-                IPDisplay.text = _IPAddress;
+                _iPAddress += "1";
+                IPDisplay.text = _iPAddress;
                 break;
             case "2":
-                _IPAddress += "2";
-                IPDisplay.text = _IPAddress;
+                _iPAddress += "2";
+                IPDisplay.text = _iPAddress;
                 break;
             case "3":
-                _IPAddress += "3";
-                IPDisplay.text = _IPAddress;
+                _iPAddress += "3";
+                IPDisplay.text = _iPAddress;
                 break;
             case "4":
-                _IPAddress += "4";
-                IPDisplay.text = _IPAddress;
+                _iPAddress += "4";
+                IPDisplay.text = _iPAddress;
                 break;
             case "5":
-                _IPAddress += "5";
-                IPDisplay.text = _IPAddress;
+                _iPAddress += "5";
+                IPDisplay.text = _iPAddress;
                 break;
             case "6":
-                _IPAddress += "6";
-                IPDisplay.text = _IPAddress;
+                _iPAddress += "6";
+                IPDisplay.text = _iPAddress;
                 break;
             case "7":
-                _IPAddress += "7";
-                IPDisplay.text = _IPAddress;
+                _iPAddress += "7";
+                IPDisplay.text = _iPAddress;
                 break;
             case "8":
-                _IPAddress += "8";
-                IPDisplay.text = _IPAddress;
+                _iPAddress += "8";
+                IPDisplay.text = _iPAddress;
                 break;
             case "9":
-                _IPAddress += "9";
-                IPDisplay.text = _IPAddress;
+                _iPAddress += "9";
+                IPDisplay.text = _iPAddress;
                 break;
             case ".":
-                _IPAddress += ".";
-                IPDisplay.text = _IPAddress;
+                _iPAddress += ".";
+                IPDisplay.text = _iPAddress;
                 break;
             case "x":
-                _IPAddress = _IPAddress.Substring(0, _IPAddress.Length - 1);
-                IPDisplay.text = _IPAddress;
+                _iPAddress = _iPAddress.Substring(0, _iPAddress.Length - 1);
+                IPDisplay.text = _iPAddress;
                 break;
             default:
                 break;
         }
 
-        if(ValidateIPv4(_IPAddress))
+        if(ValidateIPv4(_iPAddress))
         {
             ContinueButton.SetActive(true);
         }

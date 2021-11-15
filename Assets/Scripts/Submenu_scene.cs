@@ -20,11 +20,19 @@ public class Submenu_scene : MonoBehaviour
     {
         _toggleIPAddressPanel = !_toggleIPAddressPanel;
         IPAddressPanel.SetActive(_toggleIPAddressPanel);
+        if(_toggleIPAddressPanel)
+        {
+            IPAddressPanel.transform.parent.transform.SetAsLastSibling();     
+        }
     }
 
     public void ToggleSensorsPanel()
     {
         _toggleSensorsPanel = !_toggleSensorsPanel;
         SensorPanel.SetActive(_toggleSensorsPanel);
+        if(_toggleSensorsPanel)
+        {
+            SensorPanel.transform.parent.transform.SetAsLastSibling();
+        }
     }
 }
