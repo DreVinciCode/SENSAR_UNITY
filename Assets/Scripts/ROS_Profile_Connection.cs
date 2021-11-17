@@ -24,7 +24,6 @@ public class ROS_Profile_Connection : MonoBehaviour
         _deviceIP = IPText.text;
         _rosConnector.RosBridgeServerUrl = "ws://" + _deviceIP + ":9090";
         _rosConnector.RosConnect();
-        Debug.Log(_deviceIP);
     }
 
 }
