@@ -6,14 +6,29 @@ using UnityEngine.UI;
 
 public class RosTopicManager : MonoBehaviour
 {
-    public GameObject RostopicList;
+    //public GameObject RosConnector;
+    public GameObject RostopicButtonList;
     private Toggle[] _toggleButtonList;
 
     private void Start()
     {
-        _toggleButtonList = RostopicList.GetComponentsInChildren<Toggle>();
+        _toggleButtonList = RostopicButtonList.GetComponentsInChildren<Toggle>();
+        Debug.Log(GetComponents(typeof(LaserScanSubscriber)).Length + "Test");
 
-        Debug.Log(_toggleButtonList.Length);
+    }
+
+    public void CheckToggleList()
+    {
+        foreach ( Toggle data in _toggleButtonList)
+        {
+            if(data.isOn)
+            {
+                //Add to active subscriber. Active buttons correspond to rostopic list
+
+
+                Debug.Log(data.name);
+            }
+        }
     }
 
     public void ToggleROSTopicSubscription()
