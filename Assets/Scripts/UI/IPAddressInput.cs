@@ -12,7 +12,7 @@ public class IPAddressInput : MonoBehaviour
     public TMP_Text IPDisplay;
     public GameObject ContinueButton;
 
-    private string _iPAddress = "192.168.0.1";
+    private string _iPAddress = "192.168.1.142";
 
     private void Start()
     {

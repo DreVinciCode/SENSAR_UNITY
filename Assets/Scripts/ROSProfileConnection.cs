@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ROS_Profile_Connection : MonoBehaviour
+public class ROSProfileConnection : MonoBehaviour
 {
     public TMP_Text IPText;
     private RosConnector _rosConnector;

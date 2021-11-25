@@ -40,6 +40,7 @@ namespace RosSharp.RosBridgeClient
             new Thread(ConnectAndWait).Start();
         }
 
+
         public virtual void Awake()
         {
             //IsConnected = new ManualResetEvent(false);
@@ -48,7 +49,7 @@ namespace RosSharp.RosBridgeClient
 
         protected void ConnectAndWait()
         {
-            RosSocket = ConnectToRos(protocol, RosBridgeServerUrl, OnConnected, OnClosed, Serializer);
+            RosSocket = ConnectToRos(protocol, RosBridgeServerUrl, OnConnected, OnClosed, Serializer); 
 
             if (!IsConnected.WaitOne(SecondsTimeout * 1000))
                 Debug.LogWarning("Failed to connect to RosBridge at: " + RosBridgeServerUrl);
