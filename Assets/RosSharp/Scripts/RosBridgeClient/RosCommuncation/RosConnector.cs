@@ -19,12 +19,16 @@ using System;
 using System.Threading;
 using RosSharp.RosBridgeClient.Protocols;
 using UnityEngine;
+using UnityEngine.Events;
+
 
 namespace RosSharp.RosBridgeClient
 {
     public class RosConnector : MonoBehaviour
     {
         public int SecondsTimeout = 10;
+
+        public bool ConnectionStatus { get; set; }
 
         public RosSocket RosSocket { get; private set; }
         public RosSocket.SerializerEnum Serializer;
@@ -33,25 +37,44 @@ namespace RosSharp.RosBridgeClient
 
         public ManualResetEvent IsConnected { get; private set; }
 
-        public virtual void Awake()
+        public void RosConnect()
         {
             IsConnected = new ManualResetEvent(false);
             new Thread(ConnectAndWait).Start();
         }
 
+        private void Start()
+        {
+            ConnectionStatus = false;
+        }
+
+        public virtual void Awake()
+        {
+            //IsConnected = new ManualResetEvent(false);
+            //new Thread(ConnectAndWait).Start();
+        }
+
         protected void ConnectAndWait()
         {
-            RosSocket = ConnectToRos(protocol, RosBridgeServerUrl, OnConnected, OnClosed, Serializer);
+            RosSocket = ConnectToRos(protocol, RosBridgeServerUrl, OnConnected, OnClosed, Serializer); 
 
-            if (!IsConnected.WaitOne(SecondsTimeout * 1000))
+            if (!IsConnected.WaitOne(SecondsTimeout * 100))
+            {
+                ConnectionStatus = false;
                 Debug.LogWarning("Failed to connect to RosBridge at: " + RosBridgeServerUrl);
+            }
+            else
+            {
+                //call the UI Button somehow, I tried using UnityEvents but I get errors about running in main thread.
+                ConnectionStatus = true;
+            }
         }
 
         public static RosSocket ConnectToRos(Protocol protocolType, string serverUrl, EventHandler onConnected = null, EventHandler onClosed = null, RosSocket.SerializerEnum serializer = RosSocket.SerializerEnum.Microsoft)
         {
             IProtocol protocol = ProtocolInitializer.GetProtocol(protocolType, serverUrl);
             protocol.OnConnected += onConnected;
-            protocol.OnClosed += onClosed;
+            protocol.OnClosed += onClosed; 
 
             return new RosSocket(protocol, serializer);
         }
