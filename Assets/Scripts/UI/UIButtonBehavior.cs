@@ -26,7 +26,6 @@ public class UIButtonBehavior : MonoBehaviour
         _colorBlock.highlightedColor = ConnectedColor;
         _colorBlock.selectedColor = ConnectedColor;
         Button.colors = _colorBlock;
-        Debug.Log("Established");
     }
 
     public void ROSConnectionLost()
@@ -36,7 +35,5 @@ public class UIButtonBehavior : MonoBehaviour
         _colorBlock.highlightedColor = DisconnectedColor;
         _colorBlock.selectedColor = DisconnectedColor;
         Button.colors = _colorBlock;
-        Debug.Log("Disconect");
-
     }
 }
