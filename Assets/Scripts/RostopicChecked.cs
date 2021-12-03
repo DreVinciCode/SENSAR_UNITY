@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class RostopicChecked : MonoBehaviour
 {
-    public Toggle[] RostopicList;
     public GameObject VisualizeButton;
+    public GameObject[] RostopicGroups;
+    private Toggle[] RostopicList;
 
     private void Start()
     {
@@ -15,17 +16,22 @@ public class RostopicChecked : MonoBehaviour
 
     public void CheckToggleList()
     {
-        foreach (Toggle topic in RostopicList)
+        foreach (var topicGroup in RostopicGroups)
         {
-            if(topic.isOn)
+            RostopicList = topicGroup.GetComponentsInChildren<Toggle>();
+
+            foreach (Toggle topic in RostopicList)
             {
-                VisualizeButton.SetActive(true);
-                break;
+                if(topic.isOn)
+                {
+                    VisualizeButton.SetActive(true);
+                    return;
+                }
+                else
+                {
+                    VisualizeButton.SetActive(false);
+                }
             }
-            else
-            {
-                VisualizeButton.SetActive(false);
-            }
-        }
+        }     
     }
 }
