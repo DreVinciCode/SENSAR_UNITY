@@ -58,7 +58,7 @@ namespace RosSharp.RosBridgeClient
             }
             catch 
             {
-                Subscribe();
+                Subscribe(); 
             }
         }
 

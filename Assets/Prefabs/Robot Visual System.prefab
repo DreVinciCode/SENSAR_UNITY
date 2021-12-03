@@ -1194,18 +1194,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3887971432656090236}
-        m_TargetAssemblyTypeName: RosSharp.RosBridgeClient.RosConnector, Assembly-CSharp
-        m_MethodName: set_ConnectionStatus
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 3179704213067961372}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -1230,7 +1218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb64e2e126e45a841b84bdd797701aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: /scan
+  Topic: /ARFUROS/LaserScan
   TimeStep: 0
   laserScanWriter: {fileID: 0}
 --- !u!114 &1368908722
@@ -1814,7 +1802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9155922142587063046, guid: e7d099dbc1db6964e8c0f4d3b36a0918, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9155922142587063046, guid: e7d099dbc1db6964e8c0f4d3b36a0918, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -1988,6 +1976,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9155922143650843850, guid: e7d099dbc1db6964e8c0f4d3b36a0918, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155922143650843850, guid: e7d099dbc1db6964e8c0f4d3b36a0918, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 9155922143650843851, guid: e7d099dbc1db6964e8c0f4d3b36a0918, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

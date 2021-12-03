@@ -35,8 +35,11 @@ public class ROSProfileConnection : MonoBehaviour
     {
         if(ConnectionCheck)
         {
-            RosConnectionEstablished.Invoke();
-            Debug.Log(_rosConnector.ConnectionStatus);
+            if(_rosConnector.ConnectionStatus)
+            {
+                RosConnectionEstablished.Invoke();
+                ConnectionCheck = false;
+            }
         }
     }
 
