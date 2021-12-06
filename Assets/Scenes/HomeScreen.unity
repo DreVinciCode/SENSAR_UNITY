@@ -1343,6 +1343,10 @@ PrefabInstance:
       propertyPath: PublishedTransform
       value: 
       objectReference: {fileID: 29541322}
+    - target: {fileID: 2365790980177446656, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3179704213317536002, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
       propertyPath: m_Name
       value: Robot Visual System

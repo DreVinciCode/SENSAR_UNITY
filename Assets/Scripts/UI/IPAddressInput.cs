@@ -12,11 +12,13 @@ public class IPAddressInput : MonoBehaviour
     public TMP_Text IPDisplay;
     public GameObject ContinueButton;
 
+    private string _uniqueIP;
     private string _iPAddress = "192.168.0.23";
 
     private void Start()
     {
-        _iPAddress = PlayerPrefs.GetString("IP");
+        _uniqueIP = gameObject.transform.parent.transform.parent.name;
+        _iPAddress = PlayerPrefs.GetString(_uniqueIP);
         ContinueButton.SetActive(ValidateIPv4(_iPAddress));
         IPDisplay.text = _iPAddress;
     }
@@ -54,7 +56,7 @@ public class IPAddressInput : MonoBehaviour
         if (_iPAddress.Length > 15)
         {
             _iPAddress = _iPAddress.Substring(0, _iPAddress.Length - 1);
-            PlayerPrefs.SetString("IP", _iPAddress);
+            PlayerPrefs.SetString(_uniqueIP, _iPAddress);
         }
 
         switch (digitsEntered)
@@ -118,7 +120,7 @@ public class IPAddressInput : MonoBehaviour
         if (ValidateIPv4(_iPAddress))
         {
             ContinueButton.SetActive(true);
-            PlayerPrefs.SetString("IP", _iPAddress);
+            PlayerPrefs.SetString(_uniqueIP, _iPAddress);
         }
         else
         {
