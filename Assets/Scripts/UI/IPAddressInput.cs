@@ -51,7 +51,6 @@ public class IPAddressInput : MonoBehaviour
 
     private void AddDigitToIPSequence(string digitsEntered)
     {
-
         if (_iPAddress.Length > 15)
         {
             _iPAddress = _iPAddress.Substring(0, _iPAddress.Length - 1);
@@ -125,7 +124,5 @@ public class IPAddressInput : MonoBehaviour
         {
             ContinueButton.SetActive(false);
         }
-
-
     }
 }
