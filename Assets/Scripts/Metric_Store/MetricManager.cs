@@ -31,10 +31,12 @@ public class MetricManager : MonoBehaviour
             Directory.CreateDirectory(Path.GetDirectoryName(filePath));
         }
     }
-    private void Start()
+    void Start()
     {
+        Debug.Log("Metric Manager Started");
         // Get all metrics
         metrics = Object.FindObjectsOfType<MetricStore>();
+        Debug.Log(string.Format("Found {0} metrics", metrics.Length));
         // Opens a file for the new trial
         fs = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.ReadWrite);
     }
@@ -70,7 +72,7 @@ public class MetricManager : MonoBehaviour
         foreach (MetricStore metric in metrics)
         {
             names.Add(metric.name);
-            ranges.Add(string.Join(",", metric.timestamps));
+            ranges.Add(string.Join(" ", metric.timestamps));
         }
         toCSV = string.Join(",", names) + "\n" + string.Join(",", ranges);
         return toCSV;
@@ -80,7 +82,10 @@ public class MetricManager : MonoBehaviour
     {
         string csvd = csvify();
         Debug.Log(csvd);
-        //fs.Write
+        StreamWriter sw = new StreamWriter(fs);
+        sw.Write(csvd);
+        sw.Close();
+        Debug.Log("Wrote to " + filePath);
     }
 
 }
