@@ -8,7 +8,7 @@ namespace RosSharp.RosBridgeClient
     public class MapProjector : MonoBehaviour
     {
         public Transform MapOrigin;
-        public GameObject RobotLocation;
+        public Vector3 mapOffset;
 
         private float resolution;
         private float width;
@@ -54,21 +54,21 @@ namespace RosSharp.RosBridgeClient
 
             DestroyChildren();
 
-            //var rotation_angle = rotation.;
+            var rotation_angle = rotation.eulerAngles.y;
             //Debug.Log(rotation_angle);
 
+            Vector3 xAxis = MapOrigin.transform.forward.normalized;
+            Vector3 zAxiz = -1 * MapOrigin.transform.right.normalized;
+
             Vector2 x_axis = new Vector2(1, 0);
-            //x_axis = Quaternion.AngleAxis(rotation_angle, Vector3.right) * x_axis;
+            x_axis = Quaternion.AngleAxis(rotation_angle, Vector3.up) * x_axis;
 
             Vector2 y_axis = Vector2.Perpendicular(x_axis);
 
-            //Vector3 origin = new Vector3(position.x, position.y, position.z);
-            Vector3 origin = RobotLocation.transform.position;
-            //Vector3 x_inc = resolution * Vector3.Normalize(new Vector3(x_axis.x, x_axis.y, 0));
-            //Vector3 y_inc = resolution * Vector3.Normalize(new Vector3(y_axis.x, y_axis.y, 0));
+            Vector3 origin = MapOrigin.transform.position;
 
-            Vector3 x_inc = resolution * Vector3.right;
-            Vector3 y_inc = resolution * Vector3.forward;
+            Vector3 x_inc = resolution * xAxis;
+            Vector3 z_inc = resolution * zAxiz;
 
             Vector3 current = origin;
 
@@ -78,18 +78,20 @@ namespace RosSharp.RosBridgeClient
             {
                 if(widthCounter == width)
                 {
-                    current += y_inc;
+                    current += z_inc;
                     current -= x_inc * widthCounter;
                     widthCounter = 0;
                 }
 
-                if(data[i] != -1)
+                if(data[i] != -1 && i % 2 == 0)
                 {
                     GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
                     quad.transform.parent = MapOrigin.transform;
                     quad.transform.localScale = Vector3.one * resolution;
-                    quad.transform.position = current;
+                    quad.transform.position = current + mapOffset;
+                    //quad.transform.rotation = rotation;
                     quad.transform.eulerAngles = new Vector3(90, transform.eulerAngles.y, transform.eulerAngles.z);
+                    //quad.transform.localRotation = rotation;
                     quad.GetComponent<MeshRenderer>().material = _mappingMaterial;
                     quad.GetComponent<MeshRenderer>().material.color = Color.Lerp(openColor, occupliedColor, data[i] / 100);   
                 }
