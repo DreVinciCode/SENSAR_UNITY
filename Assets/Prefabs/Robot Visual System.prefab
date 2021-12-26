@@ -625,6 +625,7 @@ GameObject:
   - component: {fileID: 1368908721}
   - component: {fileID: 1368908722}
   - component: {fileID: 4155285870592825384}
+  - component: {fileID: 6847610477307992312}
   m_Layer: 5
   m_Name: RosConnector
   m_TagString: Untagged
@@ -745,6 +746,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Topic: /map
+  TimeStep: 0
+  mapProjector: {fileID: 0}
+--- !u!114 &6847610477307992312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8084394128636613482}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88366d196bbb06e49b9a4c5ebec954ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Topic: /SENSAR/amcl_pose
   TimeStep: 0
   PublishedTransform: {fileID: 0}
 --- !u!1001 &3237287810650285202
