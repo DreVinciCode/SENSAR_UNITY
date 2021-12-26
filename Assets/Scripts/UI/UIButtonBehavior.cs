@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class UIButtonBehavior : MonoBehaviour
 {
+    public RawImage BorderImage;
     public Button Button;
     public Color InitialColor;
     public Color ConnectedColor;
@@ -26,6 +27,11 @@ public class UIButtonBehavior : MonoBehaviour
         _colorBlock.highlightedColor = ConnectedColor;
         _colorBlock.selectedColor = ConnectedColor;
         Button.colors = _colorBlock;
+
+        if(BorderImage != null)
+        {
+            BorderImage.color = ConnectedColor;
+        }
     }
 
     public void ROSConnectionLost()
@@ -35,5 +41,10 @@ public class UIButtonBehavior : MonoBehaviour
         _colorBlock.highlightedColor = DisconnectedColor;
         _colorBlock.selectedColor = DisconnectedColor;
         Button.colors = _colorBlock;
+
+        if(BorderImage != null)
+        {
+            BorderImage.color = DisconnectedColor;
+        }
     }
 }
