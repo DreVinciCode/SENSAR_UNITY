@@ -23,7 +23,6 @@ namespace RosSharp.RosBridgeClient
             PublishedTransform.position = position;
             PublishedTransform.rotation = rotation;
             isMessageReceived = false;
-            Debug.Log("Message processed");
         }
 
         public void Write(MessageTypes.Geometry.PoseWithCovarianceStamped message)

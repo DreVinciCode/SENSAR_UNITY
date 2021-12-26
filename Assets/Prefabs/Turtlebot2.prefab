@@ -8134,6 +8134,7 @@ GameObject:
   - component: {fileID: 6483120590176594948}
   - component: {fileID: 3240170342797226223}
   - component: {fileID: 1877524151037786312}
+  - component: {fileID: 5032630762266118860}
   m_Layer: 0
   m_Name: Turtlebot2
   m_TagString: Untagged
@@ -8183,6 +8184,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa4d78f1d9cef6948b0f87fdc8eee025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5032630762266118860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6483120590176594949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ab870e2ddf864b4187b6c3e6e61db81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PublishedTransform: {fileID: 6483120590176594948}
 --- !u!1 &6483120590181922195
 GameObject:
   m_ObjectHideFlags: 0

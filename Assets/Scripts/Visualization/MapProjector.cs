@@ -54,23 +54,22 @@ namespace RosSharp.RosBridgeClient
 
             DestroyChildren();
 
-            var rotation_angle = rotation.eulerAngles.y;
-            //Debug.Log(rotation_angle);
+            //var rotation_angle = rotation.eulerAngles.y;
 
             Vector3 xAxis = MapOrigin.transform.forward.normalized;
             Vector3 zAxiz = -1 * MapOrigin.transform.right.normalized;
-
-            Vector2 x_axis = new Vector2(1, 0);
-            x_axis = Quaternion.AngleAxis(rotation_angle, Vector3.up) * x_axis;
-
-            Vector2 y_axis = Vector2.Perpendicular(x_axis);
-
-            Vector3 origin = MapOrigin.transform.position;
-
             Vector3 x_inc = resolution * xAxis;
             Vector3 z_inc = resolution * zAxiz;
 
+            /*
+            Vector2 x_axis = new Vector2(1, 0);
+            x_axis = Quaternion.AngleAxis(rotation_angle, Vector3.up) * x_axis;
+            Vector2 y_axis = Vector2.Perpendicular(x_axis);
+            */
+            Vector3 origin = MapOrigin.transform.position;
             Vector3 current = origin;
+
+      
 
             var widthCounter = 0;
 
@@ -83,7 +82,7 @@ namespace RosSharp.RosBridgeClient
                     widthCounter = 0;
                 }
 
-                if(data[i] != -1 && i % 2 == 0)
+                if(data[i] != -1)
                 {
                     GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
                     quad.transform.parent = MapOrigin.transform;
