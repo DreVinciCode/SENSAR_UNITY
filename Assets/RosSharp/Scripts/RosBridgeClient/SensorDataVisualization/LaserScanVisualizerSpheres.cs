@@ -22,6 +22,7 @@ namespace RosSharp.RosBridgeClient
         [Range(0.01f, 0.1f)]
         public float objectWidth;
         public Material material;
+        public GameObject laserscanSpheresParent;
 
         private GameObject laserScanSpheres;
         private GameObject[] LaserScan;
@@ -30,7 +31,7 @@ namespace RosSharp.RosBridgeClient
         private void Create(int numOfSpheres)
         {
             laserScanSpheres = new GameObject("laserScanSpheres");
-            laserScanSpheres.transform.parent = null;
+            laserScanSpheres.transform.parent = laserscanSpheresParent.transform;
 
             LaserScan = new GameObject[numOfSpheres];
 

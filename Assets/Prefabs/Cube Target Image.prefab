@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4061973264900207316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7498209531049456546}
+  m_Layer: 0
+  m_Name: LaserScanObjects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7498209531049456546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4061973264900207316}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6281903151816687552}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6281903151066459379
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,7 +43,7 @@ GameObject:
   - component: {fileID: 6281903151066459390}
   - component: {fileID: 6281903151066459389}
   m_Layer: 0
-  m_Name: QR_Cube.Right
+  m_Name: Baymax_Cube.Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,7 +138,7 @@ GameObject:
   - component: {fileID: 6281903151118594039}
   - component: {fileID: 6281903151118594038}
   m_Layer: 0
-  m_Name: QR_Cube.Bottom
+  m_Name: Baymax_Cube.Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -203,7 +233,7 @@ GameObject:
   - component: {fileID: 6281903151255120052}
   - component: {fileID: 6281903151255120043}
   m_Layer: 0
-  m_Name: QR_Cube.Back
+  m_Name: Baymax_Cube.Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -353,6 +383,7 @@ Transform:
   - {fileID: 6281903151776328251}
   - {fileID: 6281903152800103463}
   - {fileID: 1068873124267122056}
+  - {fileID: 7498209531049456546}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -368,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 1568443412, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: Eve_Cube
+  mTrackableName: Baymax_Cube
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/SENSAR.xml
   mSize: {x: 0, y: 0, z: 0}
@@ -385,13 +416,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StatusFilter: 1
+  StatusFilter: 0
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4061973264900207316}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1068873125556393923}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4061973264900207316}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1068873125556393923}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6281903152213382050
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,7 +484,7 @@ GameObject:
   - component: {fileID: 6281903152213382061}
   - component: {fileID: 6281903152213382060}
   m_Layer: 0
-  m_Name: QR_Cube.Left
+  m_Name: Baymax_Cube.Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -500,7 +579,7 @@ GameObject:
   - component: {fileID: 6281903152417777316}
   - component: {fileID: 6281903152417777307}
   m_Layer: 0
-  m_Name: QR_Cube.Front
+  m_Name: Baymax_Cube.Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -595,7 +674,7 @@ GameObject:
   - component: {fileID: 6281903152747335985}
   - component: {fileID: 6281903152747335984}
   m_Layer: 0
-  m_Name: QR_Cube.Top
+  m_Name: Baymax_Cube.Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -749,6 +828,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3240170342797226223, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: laserscanSpheresParent
+      value: 
+      objectReference: {fileID: 4061973264900207316}
     - target: {fileID: 6483120588757049792, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -806,5 +889,10 @@ PrefabInstance:
 --- !u!4 &1068873124267122056 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6483120590176594948, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+  m_PrefabInstance: {fileID: 6281903152607818124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1068873125556393923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6483120589184198223, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
   m_PrefabInstance: {fileID: 6281903152607818124}
   m_PrefabAsset: {fileID: 0}
