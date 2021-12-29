@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8664639812168505660}
   - component: {fileID: 4725532183940801190}
   - component: {fileID: 2826401784719385206}
+  - component: {fileID: 4801416212042153628}
   m_Layer: 5
   m_Name: RosConnector
   m_TagString: Untagged
@@ -152,6 +153,21 @@ MonoBehaviour:
   Topic: /SENSAR/amcl_pose
   TimeStep: 0
   poseProjector: {fileID: 0}
+--- !u!114 &4801416212042153628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580812209881786852}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca2d7904c5d906b4689860aef6a10ab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Topic: /SENSAR/particlecloud
+  TimeStep: 0
+  particleProjector: {fileID: 0}
 --- !u!1 &6061396646729610124
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,11 +941,16 @@ PrefabInstance:
     - target: {fileID: 6573278454971074942, guid: af3cbab348607be4e964489cefd67009, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 8664639812168505660}
+      objectReference: {fileID: 4801416212042153628}
     - target: {fileID: 6573278454971074942, guid: af3cbab348607be4e964489cefd67009, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 8664639812168505660}
+      objectReference: {fileID: 4801416212042153628}
+    - target: {fileID: 6573278454971074942, guid: af3cbab348607be4e964489cefd67009, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: RosSharp.RosBridgeClient.UnitySubscriber`1[[RosSharp.RosBridgeClient.MessageTypes.Geometry.PoseArray,
+        RosBridgeClient
+      objectReference: {fileID: 0}
     - target: {fileID: 8160394763045885403, guid: af3cbab348607be4e964489cefd67009, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
       value: 5
@@ -1173,7 +1194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4112666089397620539, guid: a1661872c969738499b21409320d63d2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -88
+      value: -170.99997
       objectReference: {fileID: 0}
     - target: {fileID: 4112666089397620539, guid: a1661872c969738499b21409320d63d2, type: 3}
       propertyPath: m_AnchoredPosition.y

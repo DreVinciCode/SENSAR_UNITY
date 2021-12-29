@@ -82,7 +82,7 @@ namespace RosSharp.RosBridgeClient
                     widthCounter = 0;
                 }
 
-                if(data[i] != -1)
+                if(data[i] != -1 && i % 12 == 0)
                 {
                     GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
                     quad.transform.parent = MapOrigin.transform;
