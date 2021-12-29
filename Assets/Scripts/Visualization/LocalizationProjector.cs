@@ -8,13 +8,14 @@ namespace RosSharp.RosBridgeClient
     {
         public Vector3 Offset;
         public float ParticleSize = 0.02f;
-        public Color ParticleColor;
+        public Material ParticleMaterial;
 
         [SerializeField]
         private ParticleSystem _localizationParticles;
 
         [SerializeField]
         private Mesh _particleShape;
+
         private ParticleSystem.Particle[] _particles;
         private int _totalParticles;
         private MessageTypes.Geometry.Pose[] _poses;
@@ -25,6 +26,7 @@ namespace RosSharp.RosBridgeClient
         {
             _localizationParticles.GetComponent<ParticleSystemRenderer>().mesh = _particleShape;
             _localizationParticles.GetComponent<ParticleSystemRenderer>().enabled = true;
+            _localizationParticles.GetComponent<ParticleSystemRenderer>().material = ParticleMaterial;
         }
 
         private void Update()
@@ -42,9 +44,7 @@ namespace RosSharp.RosBridgeClient
                 var particle = _poses[i];
                 _particles[i].position = GetPosition(particle).Ros2Unity() + Offset;
                 _particles[i].rotation = GetRotation(particle).Ros2Unity().y;
-
                 _particles[i].startSize = ParticleSize;
-                _particles[i].startColor = ParticleColor;           
             }
 
             _localizationParticles.SetParticles(_particles, _totalParticles);

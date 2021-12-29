@@ -2982,7 +2982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5734546945783733923, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: Offset.y
-      value: 0.1
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 5734546945783733923, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: Offset.z
@@ -3008,6 +3008,10 @@ PrefabInstance:
       propertyPath: ParticleColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5734546945783733923, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
+      propertyPath: ParticleMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 90493c64d661fb84e9243234194fbf8c, type: 2}
     - target: {fileID: 5734546945783733923, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: _localizationParticles
       value: 
