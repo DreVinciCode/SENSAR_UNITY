@@ -29,15 +29,15 @@ RectTransform:
   m_GameObject: {fileID: 3286485259653032150}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.31476924}
+  m_LocalScale: {x: 0.28324202, y: 0.28324202, z: 0.29718623}
   m_Children: []
   m_Father: {fileID: 6066875509972678404}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 26.849998, y: -52.2}
+  m_SizeDelta: {x: 127.7, y: 116.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4687021432542350919
 CanvasRenderer:
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e8d4383f1feac384b91f6b6916f5b5f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cac7c6beab6edd34b8746605973190ed, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 6573278454971074942}
   - component: {fileID: 2145216385474120345}
   m_Layer: 7
-  m_Name: OdometrySubscriber
+  m_Name: Localization
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,15 +181,15 @@ RectTransform:
   m_GameObject: {fileID: 5087843314321480375}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31476924}
+  m_LocalScale: {x: 0.30165, y: 0.30165, z: 0.37980056}
   m_Children: []
   m_Father: {fileID: 6066875509972678404}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 73.67, y: -14.200001}
+  m_SizeDelta: {x: 127.7, y: 116.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5254827639977226669
 CanvasRenderer:
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ce2fe858f2c3f7b41b0e895b6fda8b63, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8d4383f1feac384b91f6b6916f5b5f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -703,10 +703,10 @@ RectTransform:
   m_Father: {fileID: 6066875509972678404}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 26.849998, y: -14.200001}
+  m_SizeDelta: {x: 127.7, y: 116.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6066875510026354930
 CanvasRenderer:

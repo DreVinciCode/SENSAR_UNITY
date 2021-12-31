@@ -20,8 +20,11 @@ namespace RosSharp.RosBridgeClient
 
         private void ProcessMessage()
         {
-            PublishedTransform.position = position;
-            PublishedTransform.rotation = rotation;
+            PublishedTransform.position = position;      
+            var yaw = rotation.eulerAngles.y;
+            var rot = new Vector3(0f, yaw, 0f);
+            PublishedTransform.eulerAngles = rot;
+            
             isMessageReceived = false;
         }
 
