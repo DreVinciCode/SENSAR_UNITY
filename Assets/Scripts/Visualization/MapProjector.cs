@@ -5,6 +5,8 @@ using UnityEngine;
 
 namespace RosSharp.RosBridgeClient
 {
+    [RequireComponent(typeof(MeshFilter))]
+    [RequireComponent(typeof(MeshRenderer))]
     public class MapProjector : MonoBehaviour
     {
         public Transform MapOrigin;
@@ -81,7 +83,11 @@ namespace RosSharp.RosBridgeClient
                         quad.transform.name = i.ToString();
                         quad.transform.localScale = Vector3.one * resolution;
                         quad.transform.position = current + mapOffset;
+
+                        //Debug.Log("verties: " + quad.GetComponent<MeshFilter>().mesh.vertices.Length);
+
                         quad.transform.eulerAngles = new Vector3(90, transform.eulerAngles.y, transform.eulerAngles.z);
+                        quad.GetComponent<MeshFilter>().mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt16;
                         quad.GetComponent<MeshRenderer>().material = _mappingMaterial;
                         quad.GetComponent<MeshRenderer>().material.color = Color.Lerp(openColor, occupliedColor, data[i] / 100);
                     }
@@ -89,6 +95,31 @@ namespace RosSharp.RosBridgeClient
                     current += x_inc;
                     widthCounter++;
                 }
+
+                /*
+                //Merge the meshes into one here
+                MeshFilter[] meshFilters = GetComponentsInChildren<MeshFilter>();
+                CombineInstance[] combine = new CombineInstance[meshFilters.Length];
+
+                Debug.Log("Mesh filter length: " + meshFilters.Length);
+
+                int j = 0;
+                while(j < meshFilters.Length)
+                {
+                    combine[j].mesh = meshFilters[j].sharedMesh;
+                    combine[j].transform = meshFilters[j].transform.localToWorldMatrix;
+                    meshFilters[j].gameObject.SetActive(false);
+
+                    j++;
+                }
+
+                transform.GetComponent<MeshFilter>().mesh = new Mesh();
+                //transform.GetComponent<MeshFilter>().mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
+                transform.GetComponent<MeshFilter>().mesh.CombineMeshes(combine);
+                transform.gameObject.SetActive(true);
+                */
+                //DestroyChildren();
+                
             }
             else 
             {   
