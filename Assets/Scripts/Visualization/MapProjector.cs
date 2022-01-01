@@ -6,10 +6,12 @@ using UnityEngine;
 
 namespace RosSharp.RosBridgeClient
 {
-    [RequireComponent(typeof(MeshFilter))]
-    [RequireComponent(typeof(MeshRenderer))]
+    //[RequireComponent(typeof(MeshFilter))]
+    //[RequireComponent(typeof(MeshRenderer))]
     public class MapProjector : MonoBehaviour
     {
+        public Transform OccupiedMesh;
+        public Transform VacantMesh;
         public Transform MapOrigin;
         public Vector3 mapOffset;
         public float PositionThreshold = 0.1f;
@@ -83,7 +85,7 @@ namespace RosSharp.RosBridgeClient
                 MapOrigin.position = _receivedPosition;
                 MapOrigin.rotation = _receivedRotation;
 
-                DestroyChildren();
+                //DestroyChildren();
 
                 Vector3 xAxis = MapOrigin.transform.forward.normalized;
                 Vector3 zAxiz = -1 * MapOrigin.transform.right.normalized;
@@ -103,48 +105,37 @@ namespace RosSharp.RosBridgeClient
                         widthCounter = 0;
                     }
 
-                    //need to separate into 2 groups for both data 0 and 100 and combine the meshes separately and apply the cooresponding material.
-                    // When spawning the quad assign to specific parent. 
-
-
-                    if (_currentData[i] != -1)
+                    if(_currentData[i] == 0)
                     {
                         GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
-                      
-                        quad.transform.parent = MapOrigin.transform;
+                        quad.transform.parent = VacantMesh.transform;
                         quad.transform.name = i.ToString();
                         quad.transform.localScale = Vector3.one * resolution;
                         quad.transform.position = current + mapOffset;
                         quad.transform.eulerAngles = new Vector3(90, transform.eulerAngles.y, transform.eulerAngles.z);
-                        //quad.GetComponent<MeshRenderer>().material = _vacantMaterial;
-                        //quad.GetComponent<MeshRenderer>().material.color = Color.Lerp(openColor, occupliedColor, _currentData[i] / 100);
+                        quad.GetComponent<MeshRenderer>().material = _vacantMaterial;
+
+                    }
+                    else if (_currentData[i] == 100)
+                    {
+                        GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
+                        quad.transform.parent = OccupiedMesh.transform;
+                        quad.transform.name = i.ToString();
+                        quad.transform.localScale = Vector3.one * resolution;
+                        quad.transform.position = current + mapOffset;
+                        quad.transform.eulerAngles = new Vector3(90, transform.eulerAngles.y, transform.eulerAngles.z);
+                        quad.GetComponent<MeshRenderer>().material = _occupiedMaterial;
+
                     }
 
                     current += x_inc;
                     widthCounter++;
                 }
-             
-                //Place this set of lines in separate script and assign it to the child of MapOrigin. Change Destroy Objects function.
-                MeshFilter[] meshFilters = GetComponentsInChildren<MeshFilter>();
-                CombineInstance[] combine = new CombineInstance[meshFilters.Length];
 
-                int j = 0;
-                while(j < meshFilters.Length)
-                {
-                    combine[j].mesh = meshFilters[j].sharedMesh;
-                    combine[j].transform = meshFilters[j].transform.localToWorldMatrix;
-                    meshFilters[j].gameObject.SetActive(false);
-                    j++; 
-                }
-
-                var meshFilter = transform.GetComponent<MeshFilter>();
-                meshFilter.mesh = new Mesh();
-                meshFilter.mesh.CombineMeshes(combine);
-                transform.gameObject.SetActive(true);
-                transform.localScale = new Vector3(1,1,1);
-                transform.rotation = Quaternion.identity;
-                transform.position = Vector3.zero;
-                transform.GetComponent<MeshRenderer>().enabled = true;
+                OccupiedMesh.GetComponent<CombinedMeshes>().MergeMeshes();
+                VacantMesh.GetComponent<CombinedMeshes>().MergeMeshes();
+                DestroyChildren(OccupiedMesh);
+                DestroyChildren(VacantMesh);
             }
 
             isMessageReceived = false;
@@ -172,9 +163,9 @@ namespace RosSharp.RosBridgeClient
             return 1 - Mathf.Abs(Quaternion.Dot(quatA, value)) > acceptableRange;
         }
 
-        private void DestroyChildren()
+        private void DestroyChildren(Transform parent)
         {
-            foreach (Transform child in MapOrigin.transform)
+            foreach (Transform child in parent)
             {
                 GameObject.Destroy(child.gameObject);
             }
