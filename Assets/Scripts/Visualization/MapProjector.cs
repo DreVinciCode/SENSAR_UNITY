@@ -3,11 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-
 namespace RosSharp.RosBridgeClient
 {
-    //[RequireComponent(typeof(MeshFilter))]
-    //[RequireComponent(typeof(MeshRenderer))]
     public class MapProjector : MonoBehaviour
     {
         public Transform OccupiedMesh;
@@ -85,8 +82,6 @@ namespace RosSharp.RosBridgeClient
                 MapOrigin.position = _receivedPosition;
                 MapOrigin.rotation = _receivedRotation;
 
-                //DestroyChildren();
-
                 Vector3 xAxis = MapOrigin.transform.forward.normalized;
                 Vector3 zAxiz = -1 * MapOrigin.transform.right.normalized;
                 Vector3 x_inc = resolution * xAxis;
@@ -113,8 +108,6 @@ namespace RosSharp.RosBridgeClient
                         quad.transform.localScale = Vector3.one * resolution;
                         quad.transform.position = current + mapOffset;
                         quad.transform.eulerAngles = new Vector3(90, transform.eulerAngles.y, transform.eulerAngles.z);
-                        quad.GetComponent<MeshRenderer>().material = _vacantMaterial;
-
                     }
                     else if (_currentData[i] == 100)
                     {
@@ -124,8 +117,6 @@ namespace RosSharp.RosBridgeClient
                         quad.transform.localScale = Vector3.one * resolution;
                         quad.transform.position = current + mapOffset;
                         quad.transform.eulerAngles = new Vector3(90, transform.eulerAngles.y, transform.eulerAngles.z);
-                        quad.GetComponent<MeshRenderer>().material = _occupiedMaterial;
-
                     }
 
                     current += x_inc;
