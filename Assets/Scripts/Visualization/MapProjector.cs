@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 
@@ -11,14 +12,20 @@ namespace RosSharp.RosBridgeClient
     {
         public Transform MapOrigin;
         public Vector3 mapOffset;
+        public float PositionThreshold = 0.1f;
+        public float RotationThreshold = 0.3f;
 
         private float resolution;
         private float width;
         private float height;
-        private sbyte[] data;
+        private sbyte[] _receivedData;
+        private sbyte[] _currentData;
 
         [SerializeField]
-        private Material _mappingMaterial;
+        private Material _occupiedMaterial;
+
+        [SerializeField]
+        private Material _vacantMaterial;
 
         [SerializeField]
         private Color openColor;
@@ -26,9 +33,19 @@ namespace RosSharp.RosBridgeClient
         [SerializeField]
         private Color occupliedColor;
 
-        private Vector3 position;
-        private Quaternion rotation;
+        private Vector3 _receivedPosition;
+        private Quaternion _receivedRotation;
+        private Vector3 _currentPosition;
+        private Quaternion _currentRotation;
+
         private bool isMessageReceived;
+
+        private void Start()
+        {
+            _currentPosition = Vector3.zero;
+            _currentRotation = Quaternion.identity;
+            _currentData = new sbyte[0];
+        }
 
         private void Update()
         {
@@ -41,20 +58,30 @@ namespace RosSharp.RosBridgeClient
             resolution = message.info.resolution;
             width = message.info.width;
             height = message.info.height;
-            data = message.data;
-
-            position = GetPosition(message).Ros2Unity();
-            rotation = GetRotation(message).Ros2Unity();
-
+            _receivedData = message.data;
+            _receivedPosition = GetPosition(message).Ros2Unity();
+            _receivedRotation = GetRotation(message).Ros2Unity();
             isMessageReceived = true;
         }
 
         private void ProcessMessage()
-        {
-            if(MapOrigin.position != position || MapOrigin.rotation != rotation)
+        {            
+            if (((Vector3.Distance(_currentPosition, _receivedPosition) > PositionThreshold) || CompareQuaterions(_currentRotation,_receivedRotation, RotationThreshold)) && _receivedData.SequenceEqual<sbyte>(_currentData))
             {
-                MapOrigin.position = position;
-                MapOrigin.rotation = rotation;
+                _currentPosition = _receivedPosition;
+                _currentRotation = _receivedRotation;
+
+                MapOrigin.position = _currentPosition;
+                MapOrigin.rotation = _currentRotation;
+            }
+            else if (!_receivedData.SequenceEqual<sbyte>(_currentData))
+            {
+                _currentData = _receivedData;
+                _currentPosition = _receivedPosition;
+                _currentRotation = _receivedRotation;
+
+                MapOrigin.position = _receivedPosition;
+                MapOrigin.rotation = _receivedRotation;
 
                 DestroyChildren();
 
@@ -67,7 +94,7 @@ namespace RosSharp.RosBridgeClient
 
                 var widthCounter = 0;
 
-                for (int i = 0; i < data.Length; i++)
+                for (int i = 0; i < _currentData.Length; i++)
                 {
                     if (widthCounter == width)
                     {
@@ -76,32 +103,30 @@ namespace RosSharp.RosBridgeClient
                         widthCounter = 0;
                     }
 
-                    if (data[i] != -1)
+                    //need to separate into 2 groups for both data 0 and 100 and combine the meshes separately and apply the cooresponding material.
+                    // When spawning the quad assign to specific parent. 
+
+
+                    if (_currentData[i] != -1)
                     {
                         GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
+                      
                         quad.transform.parent = MapOrigin.transform;
                         quad.transform.name = i.ToString();
                         quad.transform.localScale = Vector3.one * resolution;
                         quad.transform.position = current + mapOffset;
-
-                        //Debug.Log("verties: " + quad.GetComponent<MeshFilter>().mesh.vertices.Length);
-
                         quad.transform.eulerAngles = new Vector3(90, transform.eulerAngles.y, transform.eulerAngles.z);
-                        quad.GetComponent<MeshFilter>().mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt16;
-                        quad.GetComponent<MeshRenderer>().material = _mappingMaterial;
-                        quad.GetComponent<MeshRenderer>().material.color = Color.Lerp(openColor, occupliedColor, data[i] / 100);
+                        //quad.GetComponent<MeshRenderer>().material = _vacantMaterial;
+                        //quad.GetComponent<MeshRenderer>().material.color = Color.Lerp(openColor, occupliedColor, _currentData[i] / 100);
                     }
 
                     current += x_inc;
                     widthCounter++;
                 }
-
-                /*
-                //Merge the meshes into one here
+             
+                //Place this set of lines in separate script and assign it to the child of MapOrigin. Change Destroy Objects function.
                 MeshFilter[] meshFilters = GetComponentsInChildren<MeshFilter>();
                 CombineInstance[] combine = new CombineInstance[meshFilters.Length];
-
-                Debug.Log("Mesh filter length: " + meshFilters.Length);
 
                 int j = 0;
                 while(j < meshFilters.Length)
@@ -109,21 +134,17 @@ namespace RosSharp.RosBridgeClient
                     combine[j].mesh = meshFilters[j].sharedMesh;
                     combine[j].transform = meshFilters[j].transform.localToWorldMatrix;
                     meshFilters[j].gameObject.SetActive(false);
-
-                    j++;
+                    j++; 
                 }
 
-                transform.GetComponent<MeshFilter>().mesh = new Mesh();
-                //transform.GetComponent<MeshFilter>().mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
-                transform.GetComponent<MeshFilter>().mesh.CombineMeshes(combine);
+                var meshFilter = transform.GetComponent<MeshFilter>();
+                meshFilter.mesh = new Mesh();
+                meshFilter.mesh.CombineMeshes(combine);
                 transform.gameObject.SetActive(true);
-                */
-                //DestroyChildren();
-                
-            }
-            else 
-            {   
-                //pass
+                transform.localScale = new Vector3(1,1,1);
+                transform.rotation = Quaternion.identity;
+                transform.position = Vector3.zero;
+                transform.GetComponent<MeshRenderer>().enabled = true;
             }
 
             isMessageReceived = false;
@@ -144,6 +165,11 @@ namespace RosSharp.RosBridgeClient
                 (float)message.info.origin.orientation.y,
                 (float)message.info.origin.orientation.z,
                 (float)message.info.origin.orientation.w);
+        }
+
+        public static bool CompareQuaterions(Quaternion quatA, Quaternion value, float acceptableRange)
+        {
+            return 1 - Mathf.Abs(Quaternion.Dot(quatA, value)) > acceptableRange;
         }
 
         private void DestroyChildren()
