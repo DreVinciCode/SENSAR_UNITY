@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 4112666089397620536}
   - component: {fileID: 7626884650123939264}
   m_Layer: 5
-  m_Name: Static IP Robot
+  m_Name: IP Robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

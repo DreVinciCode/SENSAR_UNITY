@@ -14,29 +14,16 @@ namespace RosSharp.RosBridgeClient
         public float PositionThreshold = 0.1f;
         public float RotationThreshold = 0.3f;
 
+
         private float resolution;
         private float width;
         private float height;
         private sbyte[] _receivedData;
         private sbyte[] _currentData;
-
-        [SerializeField]
-        private Material _occupiedMaterial;
-
-        [SerializeField]
-        private Material _vacantMaterial;
-
-        [SerializeField]
-        private Color openColor;
-
-        [SerializeField]
-        private Color occupliedColor;
-
         private Vector3 _receivedPosition;
         private Quaternion _receivedRotation;
         private Vector3 _currentPosition;
         private Quaternion _currentRotation;
-
         private bool isMessageReceived;
 
         private void Start()
@@ -44,6 +31,7 @@ namespace RosSharp.RosBridgeClient
             _currentPosition = Vector3.zero;
             _currentRotation = Quaternion.identity;
             _currentData = new sbyte[0];
+            
         }
 
         private void Update()
