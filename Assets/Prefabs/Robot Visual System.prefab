@@ -628,6 +628,7 @@ GameObject:
   - component: {fileID: 4155285870592825384}
   - component: {fileID: 6847610477307992312}
   - component: {fileID: 7612528867591427949}
+  - component: {fileID: 7860162115762204906}
   m_Layer: 5
   m_Name: RosConnector
   m_TagString: Untagged
@@ -780,6 +781,21 @@ MonoBehaviour:
   Topic: /SENSAR/particlecloud
   TimeStep: 0
   particleProjector: {fileID: 0}
+--- !u!114 &7860162115762204906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8084394128636613482}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a47b5dad2c421e74cb2729ce4bf3ca30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Topic: /SENSAR/costmap
+  TimeStep: 0
+  costmapProjector: {fileID: 0}
 --- !u!1001 &3237287810650285202
 PrefabInstance:
   m_ObjectHideFlags: 0

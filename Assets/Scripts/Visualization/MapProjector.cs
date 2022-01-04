@@ -19,24 +19,10 @@ namespace RosSharp.RosBridgeClient
         private float height;
         private sbyte[] _receivedData;
         private sbyte[] _currentData;
-
-        [SerializeField]
-        private Material _occupiedMaterial;
-
-        [SerializeField]
-        private Material _vacantMaterial;
-
-        [SerializeField]
-        private Color openColor;
-
-        [SerializeField]
-        private Color occupliedColor;
-
         private Vector3 _receivedPosition;
         private Quaternion _receivedRotation;
         private Vector3 _currentPosition;
         private Quaternion _currentRotation;
-
         private bool isMessageReceived;
 
         private void Start()
