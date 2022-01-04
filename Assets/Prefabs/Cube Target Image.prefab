@@ -1,35 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3124596250736492116
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3215209355988320447}
-  m_Layer: 0
-  m_Name: Costmap
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3215209355988320447
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3124596250736492116}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.5700006, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1068873124267122056}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4061973264900207316
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +138,7 @@ GameObject:
   - component: {fileID: 6281903151066459390}
   - component: {fileID: 6281903151066459389}
   m_Layer: 0
-  m_Name: Baymax_Cube.Right
+  m_Name: Eve_Cube.Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,8 +152,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903151066459379}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.15, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
+  m_LocalPosition: {x: 0.155, y: 0, z: 0}
+  m_LocalScale: {x: 0.31, y: 1, z: 0.31}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 1
@@ -263,7 +233,7 @@ GameObject:
   - component: {fileID: 6281903151118594039}
   - component: {fileID: 6281903151118594038}
   m_Layer: 0
-  m_Name: Baymax_Cube.Bottom
+  m_Name: Eve_Cube.Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -277,8 +247,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903151118594036}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.15}
-  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
+  m_LocalPosition: {x: 0, y: 0, z: -0.155}
+  m_LocalScale: {x: 0.31, y: 1, z: 0.31}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 5
@@ -358,7 +328,7 @@ GameObject:
   - component: {fileID: 6281903151255120052}
   - component: {fileID: 6281903151255120043}
   m_Layer: 0
-  m_Name: Baymax_Cube.Back
+  m_Name: Eve_Cube.Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -372,8 +342,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903151255120041}
   m_LocalRotation: {x: -0, y: 0, z: -1, w: -0.00000004371139}
-  m_LocalPosition: {x: 0, y: -0.15, z: 0}
-  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
+  m_LocalPosition: {x: 0, y: -0.155, z: 0}
+  m_LocalScale: {x: 0.31, y: 1, z: 0.31}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 3
@@ -524,7 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 1568443412, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: Baymax_Cube
+  mTrackableName: Eve_Cube
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/SENSAR.xml
   mSize: {x: 0, y: 0, z: 0}
@@ -557,34 +527,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1068873125556393923}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4061973264900207316}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1068873125556393923}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -609,7 +555,7 @@ GameObject:
   - component: {fileID: 6281903152213382061}
   - component: {fileID: 6281903152213382060}
   m_Layer: 0
-  m_Name: Baymax_Cube.Left
+  m_Name: Eve_Cube.Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -623,8 +569,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903152213382050}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.15, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
+  m_LocalPosition: {x: -0.155, y: 0, z: 0}
+  m_LocalScale: {x: 0.31, y: 1, z: 0.31}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 0
@@ -704,7 +650,7 @@ GameObject:
   - component: {fileID: 6281903152417777316}
   - component: {fileID: 6281903152417777307}
   m_Layer: 0
-  m_Name: Baymax_Cube.Front
+  m_Name: Eve_Cube.Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -718,8 +664,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903152417777305}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.15, z: 0}
-  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
+  m_LocalPosition: {x: 0, y: 0.155, z: 0}
+  m_LocalScale: {x: 0.31, y: 1, z: 0.31}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 2
@@ -799,7 +745,7 @@ GameObject:
   - component: {fileID: 6281903152747335985}
   - component: {fileID: 6281903152747335984}
   m_Layer: 0
-  m_Name: Baymax_Cube.Top
+  m_Name: Eve_Cube.Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -813,8 +759,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903152747335990}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.15}
-  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
+  m_LocalPosition: {x: 0, y: 0, z: 0.155}
+  m_LocalScale: {x: 0.31, y: 1, z: 0.31}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 4
@@ -926,9 +872,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03cbe7ac01b93ce41bd900e44ec37d08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OccupiedMesh: {fileID: 0}
-  VacantMesh: {fileID: 0}
-  MapOrigin: {fileID: 6281903152800103463}
+  OccupiedMesh: {fileID: 1794207784819026679}
+  VacantMesh: {fileID: 9093196738887272217}
+  MapOrigin: {fileID: 0}
   mapOffset: {x: 0, y: 0, z: 0}
   PositionThreshold: 0.1
   RotationThreshold: 0.3
@@ -1034,9 +980,109 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6281903151816687552}
     m_Modifications:
+    - target: {fileID: 882932235832424821, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1337255038649047154, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530361985308260321, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: Offset.y
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530361985308260321, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: ColorRamp.atime1
+      value: 32768
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530361985308260321, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: ColorRamp.atime2
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530361985308260321, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: ColorRamp.ctime1
+      value: 32768
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530361985308260321, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: ColorRamp.ctime2
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530361985308260321, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: ColorRamp.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530361985308260321, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: ColorRamp.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530361985308260321, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: ColorRamp.key1.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530361985308260321, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: ColorRamp.key1.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530361985308260321, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: ColorRamp.key1.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530361985308260321, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: ColorRamp.key2.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530361985308260321, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: ColorRamp.key2.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530361985308260321, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: ParticleMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: d41b9229a92df74418884260c0afe0cb, type: 2}
+    - target: {fileID: 1530361985308260321, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: ColorRamp.m_NumAlphaKeys
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530361985308260321, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: ColorRamp.m_NumColorKeys
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781448195921276719, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: Offset.y
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781448195921276719, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: ParticleSize
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781448195921276719, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: _particleShape
+      value: 
+      objectReference: {fileID: 4300000, guid: dc6c0266b7f350f40b24b8ddfae317b4, type: 3}
+    - target: {fileID: 1781448195921276719, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: ParticleMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 90493c64d661fb84e9243234194fbf8c, type: 2}
+    - target: {fileID: 1781448195921276719, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: _localizationParticles
+      value: 
+      objectReference: {fileID: 5231210811386136364}
+    - target: {fileID: 2284788624954422944, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: lengthInSec
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2284788624954422944, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2735415305454721978, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2735415305454721978, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2854125539390740810, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
       propertyPath: m_IsActive
@@ -1046,6 +1092,30 @@ PrefabInstance:
       propertyPath: laserscanSpheresParent
       value: 
       objectReference: {fileID: 4061973264900207316}
+    - target: {fileID: 3851152322696210298, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3851152322696210298, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3851152322696210298, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3851152322696210298, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3851152322696210298, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032630762266118860, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: PublishedTransform
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6483120588757049792, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1110,11 +1180,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6483120590176594948, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
   m_PrefabInstance: {fileID: 6281903152607818124}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1068873125556393923 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6483120589184198223, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+--- !u!198 &5231210811386136364 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2284788624954422944, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
   m_PrefabInstance: {fileID: 6281903152607818124}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &484015740462515075 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5880113839586882063, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+  m_PrefabInstance: {fileID: 6281903152607818124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &452152281
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068873124267122057}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.36526328, y: 0.42571458, z: 0.359768}
+  m_Center: {x: -0.0013738871, y: 0.20745717, z: -0.0013738569}
 --- !u!114 &4458276354452837609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1127,9 +1215,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d4c0de4a05db5e4f8cb1997eec887b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CostmapOrigin: {fileID: 3215209355988320447}
-  Offset: {x: 0, y: 0, z: 0}
-  ParticleSize: 0.02
+  CostmapOrigin: {fileID: 484015740462515075}
+  Offset: {x: 0, y: 0.001, z: 0}
   ColorRamp:
     serializedVersion: 2
     key0: {r: 0, g: 1, b: 0, a: 1}
@@ -1159,5 +1246,4 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 3
     m_NumAlphaKeys: 3
-  ParticleMaterial: {fileID: 0}
-  _particleShape: {fileID: 0}
+  ParticleMaterial: {fileID: 2100000, guid: d41b9229a92df74418884260c0afe0cb, type: 2}

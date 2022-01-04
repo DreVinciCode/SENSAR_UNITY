@@ -9,14 +9,9 @@ namespace RosSharp.RosBridgeClient
     {
         public Transform CostmapOrigin;
         public Vector3 Offset;
-        public float ParticleSize = 0.02f;
         public Gradient ColorRamp;
         public Material ParticleMaterial;
 
-        [SerializeField]
-        private Mesh _particleShape;
-
-        private ParticleSystem.Particle[] _particles;
         private int _totalParticles;
         private MessageTypes.Geometry.Pose[] _poses;
         private float _resolution;

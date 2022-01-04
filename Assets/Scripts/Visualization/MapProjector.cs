@@ -14,6 +14,7 @@ namespace RosSharp.RosBridgeClient
         public float PositionThreshold = 0.1f;
         public float RotationThreshold = 0.3f;
 
+
         private float resolution;
         private float width;
         private float height;
@@ -30,6 +31,7 @@ namespace RosSharp.RosBridgeClient
             _currentPosition = Vector3.zero;
             _currentRotation = Quaternion.identity;
             _currentData = new sbyte[0];
+            
         }
 
         private void Update()
