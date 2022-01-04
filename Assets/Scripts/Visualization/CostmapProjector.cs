@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace RosSharp.RosBridgeClient
@@ -12,10 +13,6 @@ namespace RosSharp.RosBridgeClient
         public Gradient ColorRamp;
         public Material ParticleMaterial;
 
-
-        [SerializeField]
-        private ParticleSystem _localizationParticles;
-
         [SerializeField]
         private Mesh _particleShape;
 
@@ -25,15 +22,15 @@ namespace RosSharp.RosBridgeClient
         private float _resolution;
         private float _width;
         private float _height;
-        private sbyte[] _data;
+        private sbyte[] _receivedData;
+        private sbyte[] _currentData;
         private bool _isMessageReceived;
         private Vector3 position;
         private Quaternion rotation;
 
         private void Start()
         {
-            _localizationParticles.GetComponent<ParticleSystemRenderer>().mesh = _particleShape;
-            _localizationParticles.GetComponent<ParticleSystemRenderer>().material = ParticleMaterial;
+            _currentData = new sbyte[0];
         }
 
         private void Update()
@@ -48,7 +45,7 @@ namespace RosSharp.RosBridgeClient
             _resolution = message.info.resolution;
             _width = message.info.width;
             _height = message.info.height;
-            _data = message.data;
+            _receivedData = message.data;
             position = GetPosition(message).Ros2Unity();
             rotation = GetRotation(message).Ros2Unity();
             _isMessageReceived = true;
@@ -56,43 +53,54 @@ namespace RosSharp.RosBridgeClient
 
         private void ProcessMessage()
         {
-            CostmapOrigin.position = position;
-            CostmapOrigin.rotation = rotation;
-
-            Vector3 xAxis = CostmapOrigin.transform.forward.normalized;
-            Vector3 zAxiz = -1 * CostmapOrigin.transform.right.normalized;
-            Vector3 x_inc = _resolution * xAxis;
-            Vector3 z_inc = _resolution * zAxiz;
-            Vector3 origin = CostmapOrigin.transform.position;
-            Vector3 current = origin;
-
-            var widthCounter = 0;
-
-            _particles = new ParticleSystem.Particle[_totalParticles];
-
-            for (int i = 0; i < _totalParticles; i++)
+            if (!_receivedData.SequenceEqual<sbyte>(_currentData))
             {
-                if (widthCounter == _width)
-                {
-                    current += z_inc;
-                    current -= x_inc * widthCounter;
-                    widthCounter = 0;
-                }
+                _currentData = _receivedData;
 
-                if (_data[i] != -1)
-                {
-                    _particles[i].position = current;
-                    _particles[i].startSize = ParticleSize;
-                    _particles[i].startColor = Color.Lerp(ColorRamp.Evaluate(0f), ColorRamp.Evaluate(1f), _data[i] / 100.0f);                
-                   
-                }
+                CostmapOrigin.position = position;
+                CostmapOrigin.rotation = rotation;
 
-                current += x_inc;
-                widthCounter++;
+                Vector3 xAxis = CostmapOrigin.transform.forward.normalized;
+                Vector3 zAxiz = -1 * CostmapOrigin.transform.right.normalized;
+                Vector3 x_inc = _resolution * xAxis;
+                Vector3 z_inc = _resolution * zAxiz;
+                Vector3 origin = CostmapOrigin.transform.position;
+                Vector3 current = origin;
+
+                var widthCounter = 0;
+
+                for (int i = 0; i < _totalParticles; i++)
+                {
+                    if (widthCounter == _width)
+                    {
+                        current += z_inc;
+                        current -= x_inc * widthCounter;
+                        widthCounter = 0;
+                    }
+
+                    if (_receivedData[i] != -1)
+                    {
+                        GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
+                        quad.transform.parent = CostmapOrigin.transform;
+                        quad.transform.name = i.ToString();
+                        quad.transform.localScale = Vector3.one * _resolution;
+                        quad.transform.position = current + Offset;
+                        quad.transform.eulerAngles = new Vector3(90, transform.eulerAngles.y, transform.eulerAngles.z);
+
+                        var material = new Material(ParticleMaterial);
+                        material.EnableKeyword("_EMISSION");
+                        var color = Color.Lerp(ColorRamp.Evaluate(0f), ColorRamp.Evaluate(1f), _receivedData[i] / 100.0f);
+                        color.a = _receivedData[i] / 100.0f;
+                        material.color = color;
+                        material.SetColor("_EmissionColor", material.color);
+                        quad.transform.GetComponent<MeshRenderer>().material = material;
+
+                    }
+
+                    current += x_inc;
+                    widthCounter++;
+                }
             }
-
-            _localizationParticles.SetParticles(_particles, _totalParticles);
-            _localizationParticles.GetComponent<ParticleSystemRenderer>().enabled = true;
 
             _isMessageReceived = false;
         }
