@@ -12,10 +12,6 @@ namespace RosSharp.RosBridgeClient
 
         [SerializeField]
         private ParticleSystem _pathParticles;
-
-        [SerializeField]
-        private Mesh _particleShape;
-
         private ParticleSystem.Particle[] _particles;
         private bool _isMessageReceived;
         private MessageTypes.Geometry.PoseStamped[] _poses;
@@ -23,7 +19,6 @@ namespace RosSharp.RosBridgeClient
 
         private void Start()
         {
-            _pathParticles.GetComponent<ParticleSystemRenderer>().mesh = _particleShape;
             _pathParticles.GetComponent<ParticleSystemRenderer>().enabled = true;
             _pathParticles.GetComponent<ParticleSystemRenderer>().material = ParticleMaterial;
         }
@@ -51,10 +46,10 @@ namespace RosSharp.RosBridgeClient
                 _particles[i].position = GetPosition(particle).Ros2Unity() + Offset;
                 _particles[i].rotation = GetRotation(particle).Ros2Unity().y;
                 _particles[i].startSize = ParticleSize;
-                _particles[i].startColor = Color.yellow;
             }
 
             _pathParticles.SetParticles(_particles, _pathSize);
+            _pathParticles.GetComponent<ParticleSystemRenderer>().enabled = true;
             _isMessageReceived = false;
         }
 
