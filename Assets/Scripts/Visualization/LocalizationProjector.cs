@@ -25,7 +25,6 @@ namespace RosSharp.RosBridgeClient
         private void Start()
         {
             _localizationParticles.GetComponent<ParticleSystemRenderer>().mesh = _particleShape;
-            _localizationParticles.GetComponent<ParticleSystemRenderer>().enabled = true;
             _localizationParticles.GetComponent<ParticleSystemRenderer>().material = ParticleMaterial;
         }
 
@@ -48,6 +47,7 @@ namespace RosSharp.RosBridgeClient
             }
 
             _localizationParticles.SetParticles(_particles, _totalParticles);
+            _localizationParticles.GetComponent<ParticleSystemRenderer>().enabled = true;
             isMessageReceived = false;
         }
         public void Write(MessageTypes.Geometry.PoseArray message)
