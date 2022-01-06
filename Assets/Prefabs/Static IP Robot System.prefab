@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 4801416212042153628}
   - component: {fileID: 8823328419668199886}
   - component: {fileID: 7647285490175599143}
+  - component: {fileID: 4030059336169186005}
   m_Layer: 5
   m_Name: RosConnector
   m_TagString: Untagged
@@ -200,6 +201,21 @@ MonoBehaviour:
   Topic: /SENSAR/path
   TimeStep: 0
   pathProjector: {fileID: 0}
+--- !u!114 &4030059336169186005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580812209881786852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49a24c5e984b6b2488e6f1419c2780f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Topic: 
+  TimeStep: 0
+  peopleProjector: {fileID: 0}
 --- !u!1 &6061396646729610124
 GameObject:
   m_ObjectHideFlags: 0
