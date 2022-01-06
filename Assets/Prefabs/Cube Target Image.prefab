@@ -1179,11 +1179,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6483120590176594949, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
   m_PrefabInstance: {fileID: 6281903152607818124}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1068873124267122056 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6483120590176594948, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
-  m_PrefabInstance: {fileID: 6281903152607818124}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &5231210811386136364 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 2284788624954422944, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
@@ -1192,6 +1187,16 @@ ParticleSystem:
 --- !u!4 &484015740462515075 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5880113839586882063, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+  m_PrefabInstance: {fileID: 6281903152607818124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2271398966849844026 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5235554349544784566, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+  m_PrefabInstance: {fileID: 6281903152607818124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1068873124267122056 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6483120590176594948, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
   m_PrefabInstance: {fileID: 6281903152607818124}
   m_PrefabAsset: {fileID: 0}
 --- !u!65 &452152281
@@ -1251,3 +1256,17 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 3
   ParticleMaterial: {fileID: 2100000, guid: d41b9229a92df74418884260c0afe0cb, type: 2}
+--- !u!114 &26033730012708805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068873124267122057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed7852114c84a144941d078f5eb48d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Offset: {x: 0, y: 0, z: 0}
+  _localizationParticles: {fileID: 2271398966849844026}

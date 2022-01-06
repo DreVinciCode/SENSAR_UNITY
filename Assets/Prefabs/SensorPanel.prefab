@@ -4050,7 +4050,7 @@ GameObject:
   - component: {fileID: 1570586228194314766}
   - component: {fileID: 673703562209939970}
   m_Layer: 5
-  m_Name: Local Path
+  m_Name: PeopleDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

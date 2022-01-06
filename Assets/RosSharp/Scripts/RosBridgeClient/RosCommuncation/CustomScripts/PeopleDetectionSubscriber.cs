@@ -5,18 +5,18 @@ using UnityEngine;
 
 namespace RosSharp.RosBridgeClient
 {
-    public class PeopleDetectionSubscriber : MonoBehaviour
+    public class PeopleDetectionSubscriber : UnitySubscriber<MessageTypes.People.PositionMeasurementArray>
     {
-        // Start is called before the first frame update
-        void Start()
-        {
+        public PeopleProjector peopleProjector;
 
+        protected override void Start()
+        {
+            base.Start();
         }
 
-        // Update is called once per frame
-        void Update()
+        protected override void ReceiveMessage(MessageTypes.People.PositionMeasurementArray message)
         {
-
+            peopleProjector.Write(message);
         }
     }
 }
