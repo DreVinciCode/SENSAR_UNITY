@@ -630,6 +630,8 @@ GameObject:
   - component: {fileID: 7612528867591427949}
   - component: {fileID: 7860162115762204906}
   - component: {fileID: 9188604706297004651}
+  - component: {fileID: 9039472175594446588}
+  - component: {fileID: 3393857387175801507}
   m_Layer: 5
   m_Name: RosConnector
   m_TagString: Untagged
@@ -707,6 +709,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  RosConnectionFailed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1368908721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -812,6 +817,36 @@ MonoBehaviour:
   Topic: /SENSAR/path
   TimeStep: 0
   pathProjector: {fileID: 0}
+--- !u!114 &9039472175594446588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8084394128636613482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49a24c5e984b6b2488e6f1419c2780f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Topic: 
+  TimeStep: 0
+  peopleProjector: {fileID: 0}
+--- !u!114 &3393857387175801507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8084394128636613482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b753b02c90b67c742995dc5a01f77382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Topic: 
+  TimeStep: 0
+  legProjector: {fileID: 0}
 --- !u!1001 &3237287810650285202
 PrefabInstance:
   m_ObjectHideFlags: 0

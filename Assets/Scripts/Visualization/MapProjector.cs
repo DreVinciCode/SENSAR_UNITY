@@ -14,7 +14,6 @@ namespace RosSharp.RosBridgeClient
         public float PositionThreshold = 0.1f;
         public float RotationThreshold = 0.3f;
 
-        //private Transform MapOrigin;
         private float resolution;
         private float width;
         private float height;

@@ -2,17 +2,17 @@ using UnityEngine;
 
 namespace RosSharp.RosBridgeClient
 {
-    public class PeopleProjector : MonoBehaviour
+    public class LegProjector : MonoBehaviour
     {
         public Vector3 Offset;
-        public GameObject PersonObject;
+        public GameObject LegObject;
         public Transform _parent;
 
         private bool _isMessageReceived;
         private MessageTypes.People.PositionMeasurement[] _people;
         private int _totalCount;
-        private float[] _coocurrence;        
-
+        private float[] _coocurrence;
+        
         private void Update()
         {
             if (_isMessageReceived)
@@ -38,7 +38,7 @@ namespace RosSharp.RosBridgeClient
                 var reliability = person.reliability;
                 var covariance = person.covariance;
                 var position = new Vector3((float)point.x, (float)point.y, (float)point.z).Ros2Unity();
-                var NewPerson =  Instantiate(PersonObject, position + Offset, Quaternion.identity, _parent.transform);
+                var NewPerson =  Instantiate(LegObject, position + Offset, Quaternion.identity, _parent.transform);
                 NewPerson.name = person.name;
             }
 
