@@ -29,12 +29,13 @@ namespace RosSharp.RosBridgeClient
         {
             _totalCount = message.people.Length;
             _coocurrence = message.cooccurrence;
-
+            _isMessageReceived = true;
         }
 
         private void ProcessMessage()
         {
-
+            Debug.Log(_totalCount + " People detected");
+            _isMessageReceived = false;
         }
 
         private Vector3 GetPosition(MessageTypes.Nav.OccupancyGrid message)
