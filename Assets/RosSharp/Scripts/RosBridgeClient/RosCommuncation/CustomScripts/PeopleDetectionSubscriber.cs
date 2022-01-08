@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 namespace RosSharp.RosBridgeClient
 {
     public class PeopleDetectionSubscriber : UnitySubscriber<MessageTypes.People.PositionMeasurementArray>
