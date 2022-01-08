@@ -92,7 +92,7 @@ namespace RosSharp.RosBridgeClient
                         quad.transform.parent = VacantMesh.transform;
                         quad.transform.name = i.ToString();
                         quad.transform.localScale = Vector3.one * resolution;
-                        quad.transform.position = current + mapOffset;
+                        quad.transform.position = current;
                         quad.transform.eulerAngles = new Vector3(90, transform.eulerAngles.y, transform.eulerAngles.z);
                     }
                     else if (_currentData[i] == 100)
@@ -101,7 +101,7 @@ namespace RosSharp.RosBridgeClient
                         quad.transform.parent = OccupiedMesh.transform;
                         quad.transform.name = i.ToString();
                         quad.transform.localScale = Vector3.one * resolution;
-                        quad.transform.position = current + mapOffset;
+                        quad.transform.position = current;
                         quad.transform.eulerAngles = new Vector3(90, transform.eulerAngles.y, transform.eulerAngles.z);
                     }
 

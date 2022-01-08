@@ -1,12 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using TMPro;
 
 namespace RosSharp.RosBridgeClient
 {
     public class StateProjector : MonoBehaviour
     {
+        public Gradient ColorRamp;
+        public Image LaptopBatteryLevel;
+        public TMP_Text BatteryLevel;
+
+        private float _maxLevel = 100f;
+        private float _currentLevel;
+        private float _lerpSpeed = 3f;
         private bool _isMessageReceived;
         private float _percentage;
 
@@ -23,10 +29,12 @@ namespace RosSharp.RosBridgeClient
         }
 
         private void ProcessMessage()
-        {
-            //apply radial progress bar
-
-
+        {          
+            BatteryLevel.text = _percentage.ToString() + "%";
+            _currentLevel = _percentage / _maxLevel;
+            LaptopBatteryLevel.fillAmount = Mathf.Lerp(LaptopBatteryLevel.fillAmount, _currentLevel, _lerpSpeed * Time.deltaTime);
+            var color = Color.Lerp(ColorRamp.Evaluate(0f), ColorRamp.Evaluate(1f), _currentLevel);
+            LaptopBatteryLevel.color = color;        
             _isMessageReceived = false;
         }
     }
