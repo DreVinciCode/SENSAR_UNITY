@@ -15,7 +15,9 @@ public class FaceCamera : MonoBehaviour
     {
         if(TargetToLookAt)
         {
-            _localTransform.LookAt(2 * _localTransform.position - TargetToLookAt.position);
+            //_localTransform.LookAt(2 * _localTransform.position - TargetToLookAt.position);
+            _localTransform.LookAt(_localTransform.position - TargetToLookAt.position);
+
         }
     }
 }

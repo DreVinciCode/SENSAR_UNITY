@@ -4,7 +4,7 @@ using TMPro;
 
 namespace RosSharp.RosBridgeClient
 {
-    public class StateProjector : MonoBehaviour
+    public class LaptopProjector : MonoBehaviour
     {
         public Gradient ColorRamp;
         public Image LaptopBatteryLevel;
