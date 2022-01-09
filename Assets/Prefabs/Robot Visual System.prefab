@@ -633,6 +633,7 @@ GameObject:
   - component: {fileID: 9039472175594446588}
   - component: {fileID: 3393857387175801507}
   - component: {fileID: 3888512438197673781}
+  - component: {fileID: 2075845703378234950}
   m_Layer: 5
   m_Name: RosConnector
   m_TagString: Untagged
@@ -862,7 +863,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Topic: 
   TimeStep: 0
-  stateProjector: {fileID: 0}
+  laptopProjector: {fileID: 0}
+--- !u!114 &2075845703378234950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8084394128636613482}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e988a06a3ae39468ac6393271c2c59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Topic: 
+  TimeStep: 0
+  robotStateProjector: {fileID: 0}
 --- !u!1001 &3237287810650285202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2065,17 +2081,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7d099dbc1db6964e8c0f4d3b36a0918, type: 3}
---- !u!114 &2365790981286160767 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9155922142609515195, guid: e7d099dbc1db6964e8c0f4d3b36a0918, type: 3}
-  m_PrefabInstance: {fileID: 6900821885529738180}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2365790980177446656 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9155922143650843844, guid: e7d099dbc1db6964e8c0f4d3b36a0918, type: 3}
@@ -2095,6 +2100,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f43d4592826965a4eb737d9f473c7547, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2365790981286160767 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9155922142609515195, guid: e7d099dbc1db6964e8c0f4d3b36a0918, type: 3}
+  m_PrefabInstance: {fileID: 6900821885529738180}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &8794270514132654583
