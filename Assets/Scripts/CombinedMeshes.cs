@@ -30,8 +30,7 @@ public class CombinedMeshes : MonoBehaviour
         transform.localScale = new Vector3(1, 1, 1);
         transform.rotation = Quaternion.identity;
         transform.position = Vector3.zero;
-        transform.GetComponent<MeshRenderer>().enabled = true;
         transform.GetComponent<MeshRenderer>().material = MappingMaterial;
+        transform.GetComponent<MeshRenderer>().enabled = true;
     }
-
 }
