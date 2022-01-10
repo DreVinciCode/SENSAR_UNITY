@@ -9619,7 +9619,6 @@ GameObject:
   - component: {fileID: 7358010859649485638}
   - component: {fileID: 7807037887374165972}
   - component: {fileID: 6473617605337521518}
-  - component: {fileID: 4526431346540438019}
   m_Layer: 5
   m_Name: RingLevel
   m_TagString: Untagged
@@ -9686,19 +9685,6 @@ MonoBehaviour:
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4526431346540438019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 577098426346854894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dccb738f184bd914fab4d4931d8fae4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TargetToLookAt: {fileID: 0}
 --- !u!1 &1337255038649047154
 GameObject:
   m_ObjectHideFlags: 0
@@ -9792,6 +9778,8 @@ GameObject:
   - component: {fileID: 1391364346483748099}
   - component: {fileID: 6706936464817608768}
   - component: {fileID: 7476534263178556162}
+  - component: {fileID: 6857877769816226192}
+  - component: {fileID: 1489443511057178354}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -9881,6 +9869,49 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &6857877769816226192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792687125043309184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55691ad5b034fe6966763a6e23818d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackedTargetType: 7
+  trackedHandness: 3
+  trackedHandJoint: 2
+  transformOverride: {fileID: 0}
+  additionalOffset: {x: 0, y: 0, z: 0}
+  additionalRotation: {x: 0, y: 0, z: 0}
+  updateSolvers: 1
+--- !u!114 &1489443511057178354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792687125043309184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c3d8a4208d4b649529822e217623d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateLinkedTransform: 0
+  moveLerpTime: 0.1
+  rotateLerpTime: 0.1
+  scaleLerpTime: 0
+  maintainScaleOnInitialization: 1
+  smoothing: 1
+  lifetime: 0
+  orientationType: 5
+  localOffset: {x: 0, y: 0, z: 0.31}
+  worldOffset: {x: 0, y: 0, z: 0}
+  useAngleStepping: 0
+  tetherAngleSteps: 6
 --- !u!1 &2479939304964881362
 GameObject:
   m_ObjectHideFlags: 0
@@ -18643,6 +18674,7 @@ GameObject:
   - component: {fileID: 6477829189062990787}
   - component: {fileID: 6853654521245034619}
   - component: {fileID: 7009479421919453454}
+  - component: {fileID: 921149027221598531}
   m_Layer: 0
   m_Name: Turtlebot2
   m_TagString: Untagged
@@ -18812,7 +18844,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6483120590176594949}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36b9c2645a31e2341bebc496be2eba98, type: 3}
   m_Name: 
@@ -18848,6 +18880,19 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   LaptopBatteryLevel: {fileID: 0}
   BatteryLevel: {fileID: 0}
+--- !u!114 &921149027221598531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6483120590176594949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc09478a8e995944695bdc5e4f4efa5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RobotCameraImage: {fileID: 0}
 --- !u!1 &6483120590181922195
 GameObject:
   m_ObjectHideFlags: 0
