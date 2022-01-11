@@ -60,7 +60,7 @@ namespace RosSharp.RosBridgeClient
         {          
             BatteryLevel.text = _percentage.ToString() + "%";
             _currentLevel = _percentage / _maxLevel;
-            LaptopBatteryLevel.fillAmount = Mathf.Lerp(LaptopBatteryLevel.fillAmount, _currentLevel, _lerpSpeed * Time.deltaTime);
+            LaptopBatteryLevel.fillAmount =_currentLevel;
             var color = Color.Lerp(ColorRamp.Evaluate(0f), ColorRamp.Evaluate(1f), _currentLevel);
             LaptopBatteryLevel.color = color;        
             _isMessageReceived = false;
