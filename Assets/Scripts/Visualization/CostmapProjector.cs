@@ -79,7 +79,7 @@ namespace RosSharp.RosBridgeClient
                         quad.transform.parent = CostmapOrigin.transform;
                         quad.transform.name = i.ToString();
                         quad.transform.localScale = Vector3.one * _resolution;
-                        quad.transform.position = current + Offset;
+                        quad.transform.position = current;
                         quad.transform.eulerAngles = new Vector3(90, transform.eulerAngles.y, transform.eulerAngles.z);
 
                         var material = new Material(ParticleMaterial);
@@ -89,7 +89,7 @@ namespace RosSharp.RosBridgeClient
                         material.color = color;
                         material.SetColor("_EmissionColor", material.color);
                         quad.transform.GetComponent<MeshRenderer>().material = material;
-
+                        quad.transform.GetComponent<MeshRenderer>().enabled = true;
                     }
 
                     current += x_inc;

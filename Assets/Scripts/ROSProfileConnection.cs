@@ -1,8 +1,5 @@
 using RosSharp.RosBridgeClient;
 using RosSharp.RosBridgeClient.Protocols;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
@@ -15,6 +12,7 @@ public class ROSProfileConnection : MonoBehaviour
     public bool ConnectionCheck { get; set; }
 
     public UnityEvent RosConnectionEstablished;
+    public UnityEvent RosConnectionFailed;
 
     private void Start()
     {
@@ -39,6 +37,10 @@ public class ROSProfileConnection : MonoBehaviour
             {
                 RosConnectionEstablished.Invoke();
                 ConnectionCheck = false;
+            }
+            else
+            {
+                RosConnectionFailed.Invoke();
             }
         }
     }
