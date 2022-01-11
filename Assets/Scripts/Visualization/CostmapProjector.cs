@@ -89,7 +89,7 @@ namespace RosSharp.RosBridgeClient
                         material.color = color;
                         material.SetColor("_EmissionColor", material.color);
                         quad.transform.GetComponent<MeshRenderer>().material = material;
-
+                        quad.transform.GetComponent<MeshRenderer>().enabled = true;
 
                     }
 

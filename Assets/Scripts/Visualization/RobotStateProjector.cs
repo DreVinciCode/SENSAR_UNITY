@@ -19,6 +19,7 @@ namespace RosSharp.RosBridgeClient
         private string _name;
         private int _messageCount;
         private string _robotBatteryName = "/Power System/Battery";
+        private string _robotBatterAltName = "mobile_base_nodelet_manager: Battery";
         private string _valueName = "Percent";
         private MessageTypes.Diagnostic.DiagnosticStatus[] _statuses;
         private MessageTypes.Diagnostic.KeyValue[] _values;
@@ -38,7 +39,7 @@ namespace RosSharp.RosBridgeClient
             {
                 _name = _statuses[i].name;
 
-                if(_name == _robotBatteryName)
+                if(_name == _robotBatteryName || _name == _robotBatterAltName)
                 {
                     _values = _statuses[i].values;
 
