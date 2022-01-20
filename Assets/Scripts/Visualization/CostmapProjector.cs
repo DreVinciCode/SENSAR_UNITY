@@ -10,7 +10,7 @@ namespace RosSharp.RosBridgeClient
         public Transform CostmapOrigin;
         public Vector3 Offset;
         public Gradient ColorRamp;
-        public Material ParticleMaterial;
+        public Material CostmapMaterial;
 
         private int _totalParticles;
         private MessageTypes.Geometry.Pose[] _poses;
@@ -20,12 +20,14 @@ namespace RosSharp.RosBridgeClient
         private sbyte[] _receivedData;
         private sbyte[] _currentData;
         private bool _isMessageReceived;
+        private bool _initializedGrid;
         private Vector3 position;
         private Quaternion rotation;
 
         private void Start()
         {
             _currentData = new sbyte[0];
+            _initializedGrid = true;
         }
 
         private void Update()
@@ -48,12 +50,16 @@ namespace RosSharp.RosBridgeClient
 
         private void ProcessMessage()
         {
-            if (!_receivedData.SequenceEqual<sbyte>(_currentData))
+            //Initialize grid
+            if (_initializedGrid)
             {
+                //!_receivedData.SequenceEqual<sbyte>(_currentData)
+                //DestroyChildren(CostmapOrigin);
+
                 _currentData = _receivedData;
 
-                CostmapOrigin.position = position;
-                CostmapOrigin.rotation = rotation;
+                CostmapOrigin.localPosition = position;
+                CostmapOrigin.localRotation = rotation;
 
                 Vector3 xAxis = CostmapOrigin.transform.forward.normalized;
                 Vector3 zAxiz = -1 * CostmapOrigin.transform.right.normalized;
@@ -73,27 +79,48 @@ namespace RosSharp.RosBridgeClient
                         widthCounter = 0;
                     }
 
-                    if (_receivedData[i] != -1)
+                    if (_receivedData[i] != -1 )
                     {
                         GameObject quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
                         quad.transform.parent = CostmapOrigin.transform;
-                        quad.transform.name = i.ToString();
+                        quad.transform.name = "costmap" + i.ToString();
                         quad.transform.localScale = Vector3.one * _resolution;
-                        quad.transform.position = current;
+                        quad.transform.position = current;                    
                         quad.transform.eulerAngles = new Vector3(90, transform.eulerAngles.y, transform.eulerAngles.z);
 
-                        var material = new Material(ParticleMaterial);
+                        var material = new Material(CostmapMaterial);
                         material.EnableKeyword("_EMISSION");
                         var color = Color.Lerp(ColorRamp.Evaluate(0f), ColorRamp.Evaluate(1f), _receivedData[i] / 100.0f);
-                        color.a = _receivedData[i] / 100.0f;
+                        //color.a = _receivedData[i] / 100.0f;
                         material.color = color;
                         material.SetColor("_EmissionColor", material.color);
                         quad.transform.GetComponent<MeshRenderer>().material = material;
-                        quad.transform.GetComponent<MeshRenderer>().enabled = true;
+                        //quad.transform.GetComponent<MeshRenderer>().enabled = true;
                     }
 
                     current += x_inc;
                     widthCounter++;
+                    _initializedGrid = false;
+                }
+            }
+            else
+            {
+                CostmapOrigin.localPosition = position;
+                CostmapOrigin.localRotation = rotation;
+
+                for (int i = 0; i < _receivedData.Length; i++)
+                {
+                    if(_currentData[i] != _receivedData[i])
+                    {
+                        var tile = GameObject.Find("costmap"+i.ToString());
+                        var material = new Material(CostmapMaterial);
+                        material.EnableKeyword("_EMISSION");
+                        var color = Color.Lerp(ColorRamp.Evaluate(0f), ColorRamp.Evaluate(1f), _receivedData[i] / 100.0f);
+                        material.color = color;
+                        material.SetColor("_EmissionColor", material.color);
+                        tile.GetComponent<MeshRenderer>().material = material;
+                        _currentData[i] = _receivedData[i];
+                    }
                 }
             }
 
@@ -114,6 +141,16 @@ namespace RosSharp.RosBridgeClient
                 (float)message.info.origin.orientation.y,
                 (float)message.info.origin.orientation.z,
                 (float)message.info.origin.orientation.w);
+        }
+
+        public void DestroyChildren(Transform parent)
+        {
+            foreach (Transform child in parent)
+            {
+                GameObject.Destroy(child.gameObject);
+            }
+
+            _initializedGrid = true;
         }
     }
 }

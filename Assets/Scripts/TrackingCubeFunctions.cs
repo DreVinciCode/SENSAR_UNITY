@@ -14,4 +14,7 @@ public class TrackingCubeFunctions : MonoBehaviour
         TargetCube.GetComponent<Transform>().rotation = new Quaternion(-0.7071068f, 0, 0, 0.7071068f);
     }
 
+
+
+
 }

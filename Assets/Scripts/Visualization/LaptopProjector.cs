@@ -12,7 +12,7 @@ namespace RosSharp.RosBridgeClient
 
         private float _maxLevel = 100f;
         private float _currentLevel;
-        private float _lerpSpeed = 3f;
+        //private float _lerpSpeed = 3f;
         private bool _isMessageReceived;
         private float _percentage;
 
