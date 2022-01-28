@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace RosSharp.RosBridgeClient
 {
-    public class FootprintProjector : MonoBehaviour
+    public class PolygonProjector : MonoBehaviour
     {
         private bool _isMessageReceived;
         private MessageTypes.Geometry.Polygon _polygon;

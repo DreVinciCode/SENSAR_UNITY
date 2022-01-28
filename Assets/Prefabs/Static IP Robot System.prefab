@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 3407166333113383839}
   - component: {fileID: 336185118862295625}
   - component: {fileID: 7210228416271254593}
+  - component: {fileID: 4641358815826666617}
+  - component: {fileID: 6215269151341147602}
   m_Layer: 5
   m_Name: RosConnector
   m_TagString: Untagged
@@ -267,6 +269,36 @@ MonoBehaviour:
   Topic: /diagnostics
   TimeStep: 0
   robotStateProjector: {fileID: 0}
+--- !u!114 &4641358815826666617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580812209881786852}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abc871259854f544bb985f1b21e6a14a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Topic: 
+  TimeStep: 0
+  pointCloudProjector: {fileID: 0}
+--- !u!114 &6215269151341147602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580812209881786852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b5050562b2c494d86906dc006441da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Topic: /clicked_point
+  TimeStep: 0
+  pointStampProjector: {fileID: 0}
 --- !u!1 &6061396646729610124
 GameObject:
   m_ObjectHideFlags: 0
