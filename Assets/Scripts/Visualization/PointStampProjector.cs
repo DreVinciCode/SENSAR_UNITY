@@ -25,11 +25,21 @@ namespace RosSharp.RosBridgeClient
 
         private void ProcessMessage()
         {
+            DestroyChildren(_parent);
+
             var position = new Vector3((float)_point.x, (float)_point.y, (float)_point.z).Ros2Unity();
             var _pointObject =  Instantiate(PointObject, _parent.transform);
             _pointObject.transform.localPosition = position;
 
             _isMessageReceived = false;
+        }
+
+        private void DestroyChildren(Transform parent)
+        {
+            foreach (Transform child in parent)
+            {
+                GameObject.Destroy(child.gameObject);
+            }
         }
     }
 }

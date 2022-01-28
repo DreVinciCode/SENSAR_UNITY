@@ -2604,6 +2604,10 @@ PrefabInstance:
       value: -64.7
       objectReference: {fileID: 0}
     - target: {fileID: 6215269151341147602, guid: fcfb63d3455408a438a1a28cc29afe06, type: 3}
+      propertyPath: Topic
+      value: /SENSAR/point
+      objectReference: {fileID: 0}
+    - target: {fileID: 6215269151341147602, guid: fcfb63d3455408a438a1a28cc29afe06, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
