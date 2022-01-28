@@ -37,8 +37,10 @@ namespace RosSharp.RosBridgeClient
                 var point = person.pos;
                 var reliability = person.reliability;
                 var covariance = person.covariance;
-                var position = new Vector3((float)point.x, (float)point.y, (float)point.z);
-                var NewPerson =  Instantiate(LegObject, position + Offset, Quaternion.identity, _parent.transform);
+                var position = new Vector3((float)point.x, (float)point.y, (float)point.z).Ros2Unity();
+                //var NewPerson =  Instantiate(LegObject, position + Offset, Quaternion.identity, _parent.transform);
+                var NewPerson = Instantiate(LegObject, _parent.transform);
+                NewPerson.transform.localPosition = position;
                 NewPerson.name = person.name;
             }
 

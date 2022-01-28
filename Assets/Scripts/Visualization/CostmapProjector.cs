@@ -50,14 +50,9 @@ namespace RosSharp.RosBridgeClient
 
         private void ProcessMessage()
         {
-            //Initialize grid
             if (_initializedGrid)
             {
-                //!_receivedData.SequenceEqual<sbyte>(_currentData)
-                //DestroyChildren(CostmapOrigin);
-
                 _currentData = _receivedData;
-
                 CostmapOrigin.localPosition = position;
                 CostmapOrigin.localRotation = rotation;
 
