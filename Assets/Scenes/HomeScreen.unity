@@ -3721,9 +3721,13 @@ PrefabInstance:
       propertyPath: LegObject
       value: 
       objectReference: {fileID: 916731251404017814, guid: a7256a8513eb79b47b623b87838b3197, type: 3}
+    - target: {fileID: 1590796174966513861, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2250215572233104720, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2506797900671665119, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_IsActive
@@ -4217,6 +4221,10 @@ PrefabInstance:
       propertyPath: TargetToLookAt
       value: 
       objectReference: {fileID: 1860296735}
+    - target: {fileID: 8185179328108042540, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8924630742172385635, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: material
       value: 
