@@ -2,9 +2,9 @@ using UnityEngine;
 
 namespace RosSharp.RosBridgeClient
 {
-    public class FootprintSubscriber : UnitySubscriber<MessageTypes.Geometry.PolygonStamped>
+    public class PolygonSubscriber : UnitySubscriber<MessageTypes.Geometry.PolygonStamped>
     {
-        public FootprintProjector footprintProjector;
+        public PolygonProjector footprintProjector;
 
         protected override void Start()
         {
