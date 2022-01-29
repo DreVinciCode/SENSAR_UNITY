@@ -725,6 +725,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 577098426346854894, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 882932235832424821, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -861,6 +865,18 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3985099880823824914, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3985099880823824914, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996424529952497302, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5032630762266118860, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
       propertyPath: PublishedTransform
       value: 
@@ -977,6 +993,20 @@ MonoBehaviour:
   Offset: {x: 0, y: 0, z: 0}
   PersonObject: {fileID: 1263942500245735920, guid: 13335614519248e4784d2d664f195449, type: 3}
   _parent: {fileID: 3452858047036199117}
+--- !u!114 &1928052056596572292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068873124267122057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 827a2412df847264c9e31557577fb4a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PointObject: {fileID: 0}
+  _parent: {fileID: 0}
 --- !u!114 &4458276354452837609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1021,16 +1051,3 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 3
   CostmapMaterial: {fileID: 0}
---- !u!114 &1928052056596572292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068873124267122057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 827a2412df847264c9e31557577fb4a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PointMaterial: {fileID: 0}

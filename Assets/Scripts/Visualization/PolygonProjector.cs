@@ -29,6 +29,9 @@ namespace RosSharp.RosBridgeClient
         {
             //find a way to display a closed polygon with the given points. 
             // round the points in order to check for any differences. 
+
+            Debug.Log("Total points: " + _totalPoints);
+
             _isMessageReceived = false;
         }
     }
