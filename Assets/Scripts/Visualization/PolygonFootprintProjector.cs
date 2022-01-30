@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace RosSharp.RosBridgeClient
 {
-    public class PolygonProjector : MonoBehaviour
+    public class PolygonFootprintProjector : MonoBehaviour
     {
         [SerializeField] LineRenderer lineRenderer;
         private bool _isMessageReceived;
