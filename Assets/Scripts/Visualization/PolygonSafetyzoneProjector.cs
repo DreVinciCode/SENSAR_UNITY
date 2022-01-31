@@ -32,7 +32,7 @@ namespace RosSharp.RosBridgeClient
         private void ProcessMessage()
         {
             lineRenderer.positionCount = _totalPoints + 1;
-            Vector3[] waypoints = new Vector3[_totalPoints + 1];
+            Vector3[] waypoints = new Vector3[_totalPoints + 1];         
 
             for (int i = 0; i < _totalPoints; i++)
             {

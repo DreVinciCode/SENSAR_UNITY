@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 7210228416271254593}
   - component: {fileID: 4641358815826666617}
   - component: {fileID: 6215269151341147602}
+  - component: {fileID: 2998914764702164707}
+  - component: {fileID: 8103770750858046614}
   m_Layer: 5
   m_Name: RosConnector
   m_TagString: Untagged
@@ -299,6 +301,36 @@ MonoBehaviour:
   Topic: /clicked_point
   TimeStep: 0
   pointStampProjector: {fileID: 0}
+--- !u!114 &2998914764702164707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580812209881786852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5db6cb058f6a39a4eac474653f0db99f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Topic: 
+  TimeStep: 0
+  polygonProjector: {fileID: 0}
+--- !u!114 &8103770750858046614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580812209881786852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7afe6acd6db8f6f42ae58d09c0521077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Topic: 
+  TimeStep: 0
+  polygonProjector: {fileID: 0}
 --- !u!1 &6061396646729610124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,14 +1441,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af3cbab348607be4e964489cefd67009, type: 3}
---- !u!224 &63625702756729000 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6066875509502926516, guid: af3cbab348607be4e964489cefd67009, type: 3}
-  m_PrefabInstance: {fileID: 6112462338329550364}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &63625702756729001 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6066875509502926517, guid: af3cbab348607be4e964489cefd67009, type: 3}
+  m_PrefabInstance: {fileID: 6112462338329550364}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &63625702756729000 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6066875509502926516, guid: af3cbab348607be4e964489cefd67009, type: 3}
   m_PrefabInstance: {fileID: 6112462338329550364}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7858016253550907733
