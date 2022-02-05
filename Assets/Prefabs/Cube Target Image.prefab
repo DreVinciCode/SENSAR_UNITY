@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6281903151066459390}
   - component: {fileID: 6281903151066459389}
   m_Layer: 0
-  m_Name: Eve_Cube.Right
+  m_Name: Space_Cube.Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903151066459379}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.155, y: 0, z: 0}
-  m_LocalScale: {x: 0.31, y: 1, z: 0.31}
+  m_LocalPosition: {x: 0.15, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 1
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 6281903151118594039}
   - component: {fileID: 6281903151118594038}
   m_Layer: 0
-  m_Name: Eve_Cube.Bottom
+  m_Name: Space_Cube.Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122,8 +122,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903151118594036}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.155}
-  m_LocalScale: {x: 0.31, y: 1, z: 0.31}
+  m_LocalPosition: {x: 0, y: 0, z: -0.15}
+  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 5
@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 6281903151255120052}
   - component: {fileID: 6281903151255120043}
   m_Layer: 0
-  m_Name: Eve_Cube.Back
+  m_Name: Space_Cube.Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -217,8 +217,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903151255120041}
   m_LocalRotation: {x: -0, y: 0, z: -1, w: -0.00000004371139}
-  m_LocalPosition: {x: 0, y: -0.155, z: 0}
-  m_LocalScale: {x: 0.31, y: 1, z: 0.31}
+  m_LocalPosition: {x: 0, y: -0.15, z: 0}
+  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 3
@@ -331,6 +331,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6281903151816687552}
   - component: {fileID: 6281903151816687559}
+  - component: {fileID: 5266769452498225117}
+  - component: {fileID: 6943223511728911938}
   - component: {fileID: 6281903151816687558}
   - component: {fileID: 8617874057338812359}
   m_Layer: 0
@@ -369,6 +371,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mTrackableName: Eve_Cube
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/SENSAR.xml
+  mSize: {x: 0, y: 0, z: 0}
+  mMotionHint: 1
+--- !u!114 &5266769452498225117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6281903151816687557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1568443412, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mTrackableName: Baymax_Cube
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/SENSAR.xml
+  mSize: {x: 0, y: 0, z: 0}
+  mMotionHint: 1
+--- !u!114 &6943223511728911938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6281903151816687557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1568443412, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mTrackableName: Space_Cube
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/SENSAR.xml
   mSize: {x: 0, y: 0, z: 0}
@@ -442,7 +478,7 @@ GameObject:
   - component: {fileID: 6281903152213382061}
   - component: {fileID: 6281903152213382060}
   m_Layer: 0
-  m_Name: Eve_Cube.Left
+  m_Name: Space_Cube.Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -456,8 +492,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903152213382050}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.155, y: 0, z: 0}
-  m_LocalScale: {x: 0.31, y: 1, z: 0.31}
+  m_LocalPosition: {x: -0.15, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 0
@@ -537,7 +573,7 @@ GameObject:
   - component: {fileID: 6281903152417777316}
   - component: {fileID: 6281903152417777307}
   m_Layer: 0
-  m_Name: Eve_Cube.Front
+  m_Name: Space_Cube.Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -551,8 +587,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903152417777305}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.155, z: 0}
-  m_LocalScale: {x: 0.31, y: 1, z: 0.31}
+  m_LocalPosition: {x: 0, y: 0.15, z: 0}
+  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 2
@@ -632,7 +668,7 @@ GameObject:
   - component: {fileID: 6281903152747335985}
   - component: {fileID: 6281903152747335984}
   m_Layer: 0
-  m_Name: Eve_Cube.Top
+  m_Name: Space_Cube.Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -646,8 +682,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903152747335990}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.155}
-  m_LocalScale: {x: 0.31, y: 1, z: 0.31}
+  m_LocalPosition: {x: 0, y: 0, z: 0.15}
+  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 4
