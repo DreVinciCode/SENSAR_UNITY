@@ -16,7 +16,6 @@ public class Submenu_scene : MonoBehaviour
     {
         IPAddressPanel.SetActive(_toggleIPAddressPanel);
         SensorPanel.SetActive(_toggleSensorsPanel);
-        TargetCubePanel.SetActive(_toggleTargetCubePanel);
     }
 
     public void ToggleIPAddressPanel()
