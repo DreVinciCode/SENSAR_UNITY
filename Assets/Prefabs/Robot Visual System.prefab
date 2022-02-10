@@ -640,6 +640,8 @@ GameObject:
   - component: {fileID: 7681503181179709501}
   - component: {fileID: 5989994161325068794}
   - component: {fileID: 1060701500570545439}
+  - component: {fileID: 3404759631666428266}
+  - component: {fileID: 6324297488310324388}
   m_Layer: 5
   m_Name: RosConnector
   m_TagString: Untagged
@@ -960,6 +962,36 @@ MonoBehaviour:
   Topic: 
   TimeStep: 0
   pointStampProjector: {fileID: 0}
+--- !u!114 &3404759631666428266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8084394128636613482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35deec0edf46cc64d9e0475d034d7ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Topic: /SENSAR/leg_detector_marker
+  TimeStep: 0
+  visualizationMarker_LegsProjector: {fileID: 0}
+--- !u!114 &6324297488310324388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8084394128636613482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe33d167373b3c4f9929b6ee8fd6cd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Topic: /SENSAR/person_detector_marker
+  TimeStep: 0
+  visualizationMarker_LegsProjector: {fileID: 0}
 --- !u!1 &8145307801608282361
 GameObject:
   m_ObjectHideFlags: 0
@@ -2058,14 +2090,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af3cbab348607be4e964489cefd67009, type: 3}
---- !u!224 &8709107622905870886 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6066875509502926516, guid: af3cbab348607be4e964489cefd67009, type: 3}
-  m_PrefabInstance: {fileID: 3237287810650285202}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8709107622905870887 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6066875509502926517, guid: af3cbab348607be4e964489cefd67009, type: 3}
+  m_PrefabInstance: {fileID: 3237287810650285202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &8709107622905870886 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6066875509502926516, guid: af3cbab348607be4e964489cefd67009, type: 3}
   m_PrefabInstance: {fileID: 3237287810650285202}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6900821885529738180
