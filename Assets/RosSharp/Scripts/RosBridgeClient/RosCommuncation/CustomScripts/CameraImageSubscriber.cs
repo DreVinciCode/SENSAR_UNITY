@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace RosSharp.RosBridgeClient
 {
-    public class CameraImageSubscriber : UnitySubscriber<MessageTypes.Sensor.Image>
+    public class CameraImageSubscriber : UnitySubscriber<MessageTypes.Sensor.CompressedImage>
     {
         public CameraProjector CameraProjector;
 
@@ -11,7 +11,7 @@ namespace RosSharp.RosBridgeClient
             base.Start();
         }
 
-        protected override void ReceiveMessage(MessageTypes.Sensor.Image message)
+        protected override void ReceiveMessage(MessageTypes.Sensor.CompressedImage message)
         {
             CameraProjector.WriteCameraImage(message);
         }

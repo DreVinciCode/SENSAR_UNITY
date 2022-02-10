@@ -32,4 +32,19 @@ public class RostopicChecked : MonoBehaviour
             }
         }     
     }
+    public void DeactivateToggleList()
+    {
+        foreach (var topicGroup in RostopicGroups)
+        {
+            RostopicList = topicGroup.GetComponentsInChildren<Toggle>();
+
+            foreach (Toggle topic in RostopicList)
+            {
+                if(topic.isOn)
+                {
+                    topic.isOn = false;
+                }
+            }
+        }
+    }
 }
