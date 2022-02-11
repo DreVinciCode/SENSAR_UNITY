@@ -53,13 +53,17 @@ namespace RosSharp.RosBridgeClient
 
             Publish(message);
 
-            Debug.Log("HErer");
+            Debug.Log(linearVelocity);
         }
 
         private void FixedUpdate()
         {
             if (_publishMessageCheck)
-                PublishMessage();
+            {
+                if(_joystick.Horizontal != 0.0f && _joystick.Vertical != 0.0f)
+                    PublishMessage();
+            }
+  
         }
 
         private static MessageTypes.Geometry.Vector3 GetGeometryVector3(Vector3 vector3)
