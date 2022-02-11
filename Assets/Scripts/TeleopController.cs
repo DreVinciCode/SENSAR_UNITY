@@ -12,8 +12,9 @@ namespace RosSharp.RosBridgeClient
 
         private float _minSpeed = 0.1f;
         private float _maxSpeed = 0.8f;
-
         private MessageTypes.Geometry.Twist message;
+
+        public bool _publishMessageCheck { get; set; }
 
         protected override void Start()
         {
@@ -42,7 +43,7 @@ namespace RosSharp.RosBridgeClient
             message.angular = new MessageTypes.Geometry.Vector3();
         }
 
-        private void FixedUpdate()
+        private void PublishMessage()
         {
             Vector3 linearVelocity = new Vector3(_joystick.Vertical * _moveSpeed, 0f, 0f);
             Vector3 angularVelocity = new Vector3(0f, 0f, _joystick.Horizontal * _moveSpeed);
@@ -51,6 +52,14 @@ namespace RosSharp.RosBridgeClient
             message.angular = GetGeometryVector3(-angularVelocity);
 
             Publish(message);
+
+            Debug.Log("HErer");
+        }
+
+        private void FixedUpdate()
+        {
+            if (_publishMessageCheck)
+                PublishMessage();
         }
 
         private static MessageTypes.Geometry.Vector3 GetGeometryVector3(Vector3 vector3)
