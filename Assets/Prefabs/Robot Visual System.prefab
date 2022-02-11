@@ -910,6 +910,8 @@ GameObject:
   - component: {fileID: 1060701500570545439}
   - component: {fileID: 3404759631666428266}
   - component: {fileID: 6324297488310324388}
+  - component: {fileID: 5440248764933176325}
+  - component: {fileID: 1044465251177495168}
   m_Layer: 5
   m_Name: RosConnector
   m_TagString: Untagged
@@ -1260,6 +1262,36 @@ MonoBehaviour:
   Topic: /SENSAR/person_detector_marker
   TimeStep: 0
   visualizationMarker_LegsProjector: {fileID: 0}
+--- !u!114 &5440248764933176325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8084394128636613482}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674905c842c0a1d4c8107849ef8b7efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Topic: /cmd_vel_mux/input/teleop
+  _joystick: {fileID: 0}
+  _increaseButton: {fileID: 0}
+  _decreaseButton: {fileID: 0}
+  _moveSpeed: 0.5
+--- !u!114 &1044465251177495168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8084394128636613482}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393f18f670828f54f86e625d2bdd0719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Topic: /mobile_base/commands/sound
 --- !u!1 &8145307801608282361
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,14 +2390,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af3cbab348607be4e964489cefd67009, type: 3}
---- !u!224 &8709107622905870886 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6066875509502926516, guid: af3cbab348607be4e964489cefd67009, type: 3}
-  m_PrefabInstance: {fileID: 3237287810650285202}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8709107622905870887 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6066875509502926517, guid: af3cbab348607be4e964489cefd67009, type: 3}
+  m_PrefabInstance: {fileID: 3237287810650285202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &8709107622905870886 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6066875509502926516, guid: af3cbab348607be4e964489cefd67009, type: 3}
   m_PrefabInstance: {fileID: 3237287810650285202}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6900821885529738180
