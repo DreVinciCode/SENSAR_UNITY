@@ -1,7 +1,6 @@
 using UnityEngine;
 using Vuforia;
 
-
 public class CameraDistance : MonoBehaviour
 {
     public ObserverBehaviour observerBehaviour;
@@ -27,6 +26,18 @@ public class CameraDistance : MonoBehaviour
 
             var newVector3 = imageTargetBehaviour.transform.position + direction * _distanceMinusSD;
             markerObject.transform.position = newVector3;
+
+            //after projecting desired point, publish to Ros topic 
+            //how to determine if this is a valid point???
+
+            //need a two button action call, 1) see if point is valid, and 2) actually send command to  /goalpoint topic 
+
+            //Figrue out how to do a summon command if robot is out in the floor going from point  A - Z and i'm in the office.
+
+            //Send stop command (actionlib_msgs /cancel) 
+            //How would I specify that I am at a specific location?
+
+            //
         }
     }
 }
