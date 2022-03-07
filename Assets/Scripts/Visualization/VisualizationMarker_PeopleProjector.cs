@@ -8,7 +8,6 @@ namespace RosSharp.RosBridgeClient
         public GameObject PersonObject;
         public Transform _parent;
 
-        private Vector3 _position;
         private int _totalCount;
         private bool _isMessageReceived;
         private MessageTypes.Visualization.Marker[] _markers;
@@ -35,9 +34,9 @@ namespace RosSharp.RosBridgeClient
             {
                 var person = _markers[i];
                 var position = GetPosition(person.pose).Ros2Unity();
-                var LegMarker = Instantiate(PersonObject, _parent.transform);
-                LegMarker.transform.localPosition = _position;
-                LegMarker.name = person.text;
+                var PersonMarker = Instantiate(PersonObject, _parent.transform);
+                PersonMarker.transform.localPosition = position;
+                PersonMarker.name = person.text;
             }
 
             _isMessageReceived = false;
