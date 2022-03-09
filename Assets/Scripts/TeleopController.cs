@@ -52,8 +52,6 @@ namespace RosSharp.RosBridgeClient
             message.angular = GetGeometryVector3(-angularVelocity);
 
             Publish(message);
-
-            Debug.Log(linearVelocity);
         }
 
         private void FixedUpdate()
@@ -63,7 +61,6 @@ namespace RosSharp.RosBridgeClient
                 if(_joystick.Horizontal != 0.0f && _joystick.Vertical != 0.0f)
                     PublishMessage();
             }
-  
         }
 
         private static MessageTypes.Geometry.Vector3 GetGeometryVector3(Vector3 vector3)
