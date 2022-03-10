@@ -356,7 +356,7 @@ MonoBehaviour:
   maintainScaleOnInitialization: 1
   smoothing: 1
   lifetime: 0
-  orientationType: 5
+  orientationType: 4
   localOffset: {x: 0, y: 0, z: 0}
   worldOffset: {x: 0, y: 0, z: 0}
   useAngleStepping: 0
