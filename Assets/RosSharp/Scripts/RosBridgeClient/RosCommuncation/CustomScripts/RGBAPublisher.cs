@@ -14,7 +14,7 @@ namespace RosSharp.RosBridgeClient
             base.Start();
         }
 
-        public void PublishColorMessage(int state_color)
+        public void PublishColorMessage(int state_color) //Note that only one parameter can be used if using editor to pass parameters.
         {
             message = new MessageTypes.Std.ColorRGBA();
 
