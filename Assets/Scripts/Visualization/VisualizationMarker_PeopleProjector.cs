@@ -1,4 +1,6 @@
+using TMPro;
 using UnityEngine;
+
 
 namespace RosSharp.RosBridgeClient
 {
@@ -35,6 +37,8 @@ namespace RosSharp.RosBridgeClient
                 var person = _markers[i];
                 var position = GetPosition(person.pose).Ros2Unity();
                 var PersonMarker = Instantiate(PersonObject, _parent.transform);
+                var reliability_text = PersonMarker.GetComponentInChildren<TMP_Text>();         
+                reliability_text.text = System.Math.Round(float.Parse(person.text), 2).ToString();
                 PersonMarker.transform.localPosition = position;
                 PersonMarker.name = person.text;
             }
