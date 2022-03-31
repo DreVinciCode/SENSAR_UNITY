@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 6281903151066459390}
   - component: {fileID: 6281903151066459389}
   m_Layer: 0
-  m_Name: Space_Cube.Right
+  m_Name: HZD_Cube.Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -333,8 +333,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903151066459379}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.15, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
+  m_LocalPosition: {x: 0.155, y: 0, z: 0}
+  m_LocalScale: {x: 0.31, y: 1, z: 0.31}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 1
@@ -414,7 +414,7 @@ GameObject:
   - component: {fileID: 6281903151118594039}
   - component: {fileID: 6281903151118594038}
   m_Layer: 0
-  m_Name: Space_Cube.Bottom
+  m_Name: HZD_Cube.Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -428,8 +428,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903151118594036}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.15}
-  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
+  m_LocalPosition: {x: 0, y: 0, z: -0.155}
+  m_LocalScale: {x: 0.31, y: 1, z: 0.31}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 5
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 6281903151255120052}
   - component: {fileID: 6281903151255120043}
   m_Layer: 0
-  m_Name: Space_Cube.Back
+  m_Name: HZD_Cube.Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -523,8 +523,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903151255120041}
   m_LocalRotation: {x: -0, y: 0, z: -1, w: -0.00000004371139}
-  m_LocalPosition: {x: 0, y: -0.15, z: 0}
-  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
+  m_LocalPosition: {x: 0, y: -0.155, z: 0}
+  m_LocalScale: {x: 0.31, y: 1, z: 0.309462}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 3
@@ -636,6 +636,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6281903151816687552}
+  - component: {fileID: 1928683352367790324}
   - component: {fileID: 6281903151816687559}
   - component: {fileID: 5266769452498225117}
   - component: {fileID: 6943223511728911938}
@@ -664,6 +665,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1928683352367790324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6281903151816687557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1568443412, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mTrackableName: QR_Cube
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/SENSAR.xml
+  mSize: {x: 0, y: 0, z: 0}
+  mMotionHint: 1
 --- !u!114 &6281903151816687559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -710,7 +728,7 @@ MonoBehaviour:
   m_Script: {fileID: 1568443412, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: Space_Cube
+  mTrackableName: Aloy_Cube
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/SENSAR.xml
   mSize: {x: 0, y: 0, z: 0}
@@ -760,7 +778,7 @@ GameObject:
   - component: {fileID: 6281903152213382061}
   - component: {fileID: 6281903152213382060}
   m_Layer: 0
-  m_Name: Space_Cube.Left
+  m_Name: HZD_Cube.Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -774,8 +792,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903152213382050}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.15, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
+  m_LocalPosition: {x: -0.155, y: 0, z: 0}
+  m_LocalScale: {x: 0.31, y: 1, z: 0.309731}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 0
@@ -855,7 +873,7 @@ GameObject:
   - component: {fileID: 6281903152417777316}
   - component: {fileID: 6281903152417777307}
   m_Layer: 0
-  m_Name: Space_Cube.Front
+  m_Name: HZD_Cube.Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -869,8 +887,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903152417777305}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.15, z: 0}
-  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
+  m_LocalPosition: {x: 0, y: 0.155, z: 0}
+  m_LocalScale: {x: 0.31, y: 1, z: 0.31}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 2
@@ -950,7 +968,7 @@ GameObject:
   - component: {fileID: 6281903152747335985}
   - component: {fileID: 6281903152747335984}
   m_Layer: 0
-  m_Name: Space_Cube.Top
+  m_Name: HZD_Cube.Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -964,8 +982,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281903152747335990}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.15}
-  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
+  m_LocalPosition: {x: 0, y: 0, z: 0.155}
+  m_LocalScale: {x: 0.31, y: 1, z: 0.31}
   m_Children: []
   m_Father: {fileID: 6281903151776328251}
   m_RootOrder: 4
@@ -1605,9 +1623,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
---- !u!198 &5603124796591305046 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 1940912843915886810, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+--- !u!224 &3787845092322298499 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7186879314033097487, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
   m_PrefabInstance: {fileID: 6281903152607818124}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &7437958417634337974 stripped
@@ -1643,11 +1661,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &3787845092322298499 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7186879314033097487, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
-  m_PrefabInstance: {fileID: 6281903152607818124}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9055733776980312252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3062905445874364720, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
@@ -1676,6 +1689,11 @@ ParticleSystem:
 --- !u!4 &484015740462515075 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5880113839586882063, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
+  m_PrefabInstance: {fileID: 6281903152607818124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5603124796591305046 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1940912843915886810, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
   m_PrefabInstance: {fileID: 6281903152607818124}
   m_PrefabAsset: {fileID: 0}
 --- !u!120 &1287594887370040243 stripped
