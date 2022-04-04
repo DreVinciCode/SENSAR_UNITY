@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/RViz_Panel.unity
-    guid: 3d656df903552884ca60137ca19fad9b
+    path: Assets/Scenes/FOCUS.unity
+    guid: d91d1444479125f4cabc1220b2ee3978
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 6124056b428d0664ea04b1fd0f444473, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5a5a1f21043c4054db7cb0b3ce0e24c0, type: 2}
