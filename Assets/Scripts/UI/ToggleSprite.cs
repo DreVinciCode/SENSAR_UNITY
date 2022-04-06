@@ -18,4 +18,9 @@ public class ToggleSprite : MonoBehaviour
     {
         spriteRenderer.enabled = false;
     }
+
+    public void unlockedSprite()
+    {
+        spriteRenderer.color = Color.white;
+    }
 }

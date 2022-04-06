@@ -9,17 +9,16 @@ public class TouchInteraction : MonoBehaviour, IMixedRealityTouchHandler
 {
     //public TouchEvent OnTouchCompleted;
     //public TouchEvent OnTouchStarted;
-    public TouchEvent OnTouchUpdated;
+    //public TouchEvent OnTouchUpdated;
     public UnityEvent OnConnectComplete;
     public Image ConnectRing;
-
     public Gradient ColorRamp;
 
     private float _duration = 2f;
     private float _currentTime = 0f;
     private bool _locked;
 
-    public bool _buttonPressed { get; set; }
+    public bool SuperUser { get; set; }
 
     private void Start()
     {
@@ -28,7 +27,6 @@ public class TouchInteraction : MonoBehaviour, IMixedRealityTouchHandler
 
     void IMixedRealityTouchHandler.OnTouchStarted(HandTrackingInputEventData eventData)
     {
-
         if (_locked)
         {
             //OnTouchStarted.Invoke(eventData);
@@ -48,7 +46,7 @@ public class TouchInteraction : MonoBehaviour, IMixedRealityTouchHandler
 
     void IMixedRealityTouchHandler.OnTouchUpdated(HandTrackingInputEventData eventData)
     {
-        OnTouchUpdated.Invoke(eventData);
+        //OnTouchUpdated.Invoke(eventData);
 
         if (_locked)
         {
@@ -78,15 +76,5 @@ public class TouchInteraction : MonoBehaviour, IMixedRealityTouchHandler
             yield return null;
         }
     }
-
-    public void press()
-    {
-        Debug.Log("HERererer");
-    }
-    public void released()
-    {
-        Debug.Log("release");
-    }
-
 }
 
