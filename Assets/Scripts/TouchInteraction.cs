@@ -23,31 +23,31 @@ public class TouchInteraction : MonoBehaviour, IMixedRealityTouchHandler
     private void Start()
     {
         _locked = true;
+        SuperUser = false;
     }
 
     void IMixedRealityTouchHandler.OnTouchStarted(HandTrackingInputEventData eventData)
     {
-        if (_locked)
+        if (!_locked)
         {
-            //OnTouchStarted.Invoke(eventData);
             _currentTime = 0f;
             ConnectRing.fillAmount = 0;
+            _locked = !_locked;
+
         }
     }
     void IMixedRealityTouchHandler.OnTouchCompleted(HandTrackingInputEventData eventData)
     {
-        //OnTouchCompleted.Invoke(eventData);
         if (_locked)
         {
+            ConnectRing.fillAmount = 0; 
             _currentTime = 0f;
-            ConnectRing.fillAmount = 0;
         }
     }
 
     void IMixedRealityTouchHandler.OnTouchUpdated(HandTrackingInputEventData eventData)
     {
         //OnTouchUpdated.Invoke(eventData);
-
         if (_locked)
         {
             StartCoroutine(Timer(_duration));
@@ -60,14 +60,14 @@ public class TouchInteraction : MonoBehaviour, IMixedRealityTouchHandler
         var startTime = Time.time;
         var value = 0f;
 
-        while (Time.time - startTime < duration)
+        while (Time.time - startTime < duration && _locked)
         {
             value = _currentTime / duration;
             var color = Color.Lerp(ColorRamp.Evaluate(0f), ColorRamp.Evaluate(1f), value);
             ConnectRing.color = color;
             ConnectRing.fillAmount = value;
 
-            if(value >= 1 && _locked)
+            if(ConnectRing.fillAmount >= 1)
             {
                 _locked = false;
                 OnConnectComplete.Invoke();
@@ -75,6 +75,16 @@ public class TouchInteraction : MonoBehaviour, IMixedRealityTouchHandler
 
             yield return null;
         }
+    }
+
+    public void ConnectedColor()
+    {
+        ConnectRing.color = Color.cyan;
+    }
+
+    public void DisconnectColor()
+    {
+        ConnectRing.color = Color.red;
     }
 }
 
