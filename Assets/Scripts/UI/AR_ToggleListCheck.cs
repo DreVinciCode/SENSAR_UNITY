@@ -5,7 +5,6 @@ using Microsoft.MixedReality.Toolkit.UI;
 
 public class AR_ToggleListCheck : MonoBehaviour
 {
-    //public UnityEvent test;
     public GameObject ToggleList;
 
     private Interactable[] _rosTopicList;
