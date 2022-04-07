@@ -32,6 +32,7 @@ public class RostopicChecked : MonoBehaviour
             }
         }     
     }
+
     public void DeactivateToggleList()
     {
         foreach (var topicGroup in RostopicGroups)
