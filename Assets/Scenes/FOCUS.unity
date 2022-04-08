@@ -239,7 +239,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1225199043}
+  - {fileID: 2122208406}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -398,35 +398,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -25.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!21 &122321371
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Left_scaledMaterial
-
-    164856'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 95925e50112d4317bf6b3112cb78ca67, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &123432179
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +471,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 122321371}
+  - {fileID: 134096587}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -522,6 +493,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!21 &134096587
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'QR_Cube.Left_scaledMaterial
+
+    172310'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 95925e50112d4317bf6b3112cb78ca67, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!43 &215205294
 Mesh:
   m_ObjectHideFlags: 0
@@ -728,8 +728,111 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &263576965
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: seguisb SDF Material (Instance)
+  m_Shader: {fileID: 4800000, guid: 1c504b73bf66872479cd1215fb5ce0fe, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FaceTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 28013742671525116, guid: 6a84f857bec7e7345843ae29404c57ce, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OutlineTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Ambient: 0.5
+    - _Bevel: 0.5
+    - _BevelClamp: 0
+    - _BevelOffset: 0
+    - _BevelRoundness: 0
+    - _BevelWidth: 0
+    - _BumpFace: 0
+    - _BumpOutline: 0
+    - _ColorMask: 15
+    - _Diffuse: 0.5
+    - _FaceDilate: 0
+    - _FaceUVSpeedX: 0
+    - _FaceUVSpeedY: 0
+    - _GlowInner: 0.05
+    - _GlowOffset: 0
+    - _GlowOuter: 0.05
+    - _GlowPower: 0.75
+    - _GradientScale: 6
+    - _LightAngle: 3.1416
+    - _MaskSoftnessX: 0
+    - _MaskSoftnessY: 0
+    - _OutlineSoftness: 0
+    - _OutlineUVSpeedX: 0
+    - _OutlineUVSpeedY: 0
+    - _OutlineWidth: 0
+    - _PerspectiveFilter: 0.875
+    - _Reflectivity: 10
+    - _ScaleRatioA: 0.8333333
+    - _ScaleRatioB: 0.6770833
+    - _ScaleRatioC: 0.6770833
+    - _ScaleX: 1
+    - _ScaleY: 1
+    - _ShaderFlags: 0
+    - _Sharpness: 0
+    - _SpecularPower: 2
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _TextureHeight: 512
+    - _TextureWidth: 512
+    - _UnderlayDilate: 0
+    - _UnderlayOffsetX: 0
+    - _UnderlayOffsetY: 0
+    - _UnderlaySoftness: 0
+    - _VertexOffsetX: 0
+    - _VertexOffsetY: 0
+    - _WeightBold: 0.75
+    - _WeightNormal: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
+    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
+    - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+    - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_BuildTextureStacks: []
 --- !u!1 &421889071
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,7 +874,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &443448947 stripped
 GameObject:
@@ -796,13 +899,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IPDisplay: {fileID: 1404870277}
-  OnAccessGranted:
+  OnSuperUserAccess:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1078920201}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1097752335}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SuperUserStatus
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -813,7 +916,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1466287419}
         m_TargetAssemblyTypeName: ToggleSprite, Assembly-CSharp
-        m_MethodName: unlockedSprite
+        m_MethodName: SetSpriteColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -823,71 +926,65 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5205937833325349876}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+  OnOrdinaryUserAccess:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1097752335}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OrdinaryUserStatus
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1801909404}
+      - m_Target: {fileID: 1466287419}
         m_TargetAssemblyTypeName: ToggleSprite, Assembly-CSharp
-        m_MethodName: SwapSprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 21300022, guid: 20f25674b9512834f88938d45ed495d7, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 10424260}
-        m_TargetAssemblyTypeName: TouchInteraction, Assembly-CSharp
-        m_MethodName: set_SuperUser
-        m_Mode: 6
+        m_MethodName: SetSpriteColor
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
---- !u!21 &444399134
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  OnLockedStatus:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1097752335}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LockedStatus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1466287419}
+        m_TargetAssemblyTypeName: ToggleSprite, Assembly-CSharp
+        m_MethodName: SetSpriteColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!82 &445306748 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1328952293554603449, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+  m_PrefabInstance: {fileID: 2213439604665970345}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Back_scaledMaterial
-
-    164856'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1226c54eca664e3b8efc716438d05bd7, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &448896292
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,12 +1062,48 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1466287419}
+        m_TargetAssemblyTypeName: ToggleSprite, Assembly-CSharp
+        m_MethodName: deactivateSprite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 445306748}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 82bb32b8900f55c488f190d835ffcd99, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   RosConnectionFailed:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 10424260}
         m_TargetAssemblyTypeName: TouchInteraction, Assembly-CSharp
         m_MethodName: DisconnectColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1466287419}
+        m_TargetAssemblyTypeName: ToggleSprite, Assembly-CSharp
+        m_MethodName: activateSprite
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1200,6 +1333,82 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450cf5803ec90564daef7fd2b9464cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &599247865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 599247866}
+  - component: {fileID: 599247868}
+  - component: {fileID: 599247867}
+  m_Layer: 0
+  m_Name: Robot Description
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &599247866
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599247865}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0.31500003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6841202586283193503}
+  m_Father: {fileID: 2122050551}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &599247867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599247865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c3d8a4208d4b649529822e217623d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateLinkedTransform: 0
+  moveLerpTime: 0.1
+  rotateLerpTime: 0.1
+  scaleLerpTime: 0
+  maintainScaleOnInitialization: 1
+  smoothing: 1
+  lifetime: 0
+  orientationType: 4
+  localOffset: {x: 0, y: 0, z: 0.25}
+  worldOffset: {x: 0, y: 0, z: 0}
+  useAngleStepping: 0
+  tetherAngleSteps: 6
+--- !u!114 &599247868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599247865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55691ad5b034fe6966763a6e23818d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackedTargetType: 7
+  trackedHandness: 3
+  trackedHandJoint: 2
+  transformOverride: {fileID: 2122050551}
+  additionalOffset: {x: 0, y: 0, z: 0}
+  additionalRotation: {x: 0, y: 0, z: 0}
+  updateSolvers: 1
 --- !u!1 &606876272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,35 +1567,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!21 &693315680
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Front_scaledMaterial
-
-    164856'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 9eade0f7e2f943eaaa8835a813ee2e03, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &732240235 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 459487310535110631, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
@@ -1397,109 +1577,6 @@ ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 2284788624954422944, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
   m_PrefabInstance: {fileID: 552805790}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &755074211
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: seguisb SDF Material (Instance)
-  m_Shader: {fileID: 4800000, guid: 1c504b73bf66872479cd1215fb5ce0fe, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Cube:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _FaceTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 28013742671525116, guid: 6a84f857bec7e7345843ae29404c57ce, type: 2}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OutlineTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _Ambient: 0.5
-    - _Bevel: 0.5
-    - _BevelClamp: 0
-    - _BevelOffset: 0
-    - _BevelRoundness: 0
-    - _BevelWidth: 0
-    - _BumpFace: 0
-    - _BumpOutline: 0
-    - _ColorMask: 15
-    - _Diffuse: 0.5
-    - _FaceDilate: 0
-    - _FaceUVSpeedX: 0
-    - _FaceUVSpeedY: 0
-    - _GlowInner: 0.05
-    - _GlowOffset: 0
-    - _GlowOuter: 0.05
-    - _GlowPower: 0.75
-    - _GradientScale: 6
-    - _LightAngle: 3.1416
-    - _MaskSoftnessX: 0
-    - _MaskSoftnessY: 0
-    - _OutlineSoftness: 0
-    - _OutlineUVSpeedX: 0
-    - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0
-    - _PerspectiveFilter: 0.875
-    - _Reflectivity: 10
-    - _ScaleRatioA: 0.8333333
-    - _ScaleRatioB: 0.6770833
-    - _ScaleRatioC: 0.6770833
-    - _ScaleX: 1
-    - _ScaleY: 1
-    - _ShaderFlags: 0
-    - _Sharpness: 0
-    - _SpecularPower: 2
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _TextureHeight: 512
-    - _TextureWidth: 512
-    - _UnderlayDilate: 0
-    - _UnderlayOffsetX: 0
-    - _UnderlayOffsetY: 0
-    - _UnderlaySoftness: 0
-    - _VertexOffsetX: 0
-    - _VertexOffsetY: 0
-    - _WeightBold: 0.75
-    - _WeightNormal: 0
-    - _ZWrite: 1
-    m_Colors:
-    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
-    - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
-    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
-    - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
-    - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
-    - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_BuildTextureStacks: []
 --- !u!1 &813670965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,40 +1756,54 @@ Material:
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_BuildTextureStacks: []
---- !u!21 &957151749
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Top_scaledMaterial
-
-    164856'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 6eeb14f28ca64805981d541a91e56714, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &1078920201 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9023940030649017690, guid: 8be994fd91fd5a44fbfbcb27e34e8557, type: 3}
   m_PrefabInstance: {fileID: 487462951733711136}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1097752334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1097752336}
+  - component: {fileID: 1097752335}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1097752335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097752334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f35ed4b9656cee340876b1b125999d9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1097752336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097752334}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1181904668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1756,7 +1847,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1216408946
 GameObject:
@@ -1831,7 +1922,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 693315680}
+  - {fileID: 1651961279}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1853,35 +1944,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!21 &1225199043
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Right_scaledMaterial
-
-    164856'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 68f6c7ab518c42209cf5f6b1f5f088bc, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &1228259778
 GameObject:
   m_ObjectHideFlags: 0
@@ -1913,7 +1975,7 @@ Transform:
   - {fileID: 443448948}
   - {fileID: 4316553457169000895}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1238641710 stripped
 Transform:
@@ -1993,7 +2055,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 444399134}
+  - {fileID: 1351632861}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2088,7 +2150,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 957151749}
+  - {fileID: 1664651935}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2110,16 +2172,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!21 &1359090930
+--- !u!21 &1351632861
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Bottom_scaledMaterial
+  m_Name: 'QR_Cube.Back_scaledMaterial
 
-    164856'
+    172310'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -2132,7 +2194,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4d5483a38aaf46e38f07acc5dfb80aec, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1226c54eca664e3b8efc716438d05bd7, type: 3}
         m_Scale: {x: -1, y: -1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -2273,6 +2335,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404870275}
   m_CullTransparentMesh: 1
+--- !u!21 &1407176855
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'QR_Cube.Bottom_scaledMaterial
+
+    172310'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 4d5483a38aaf46e38f07acc5dfb80aec, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!114 &1466287419 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1466287419, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
@@ -2305,6 +2396,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9023940031814096172, guid: 8be994fd91fd5a44fbfbcb27e34e8557, type: 3}
   m_PrefabInstance: {fileID: 487462951733711136}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &1651961279
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'QR_Cube.Front_scaledMaterial
+
+    172310'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 9eade0f7e2f943eaaa8835a813ee2e03, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1664651935
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'QR_Cube.Top_scaledMaterial
+
+    172310'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 6eeb14f28ca64805981d541a91e56714, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1666552288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2452,7 +2601,7 @@ Transform:
   - {fileID: 606876273}
   - {fileID: 87999922}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1901336597
 GameObject:
@@ -2674,7 +2823,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1359090930}
+  - {fileID: 1407176855}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2728,6 +2877,7 @@ Transform:
   - {fileID: 1901336598}
   - {fileID: 813670966}
   - {fileID: 552805791}
+  - {fileID: 599247866}
   m_Father: {fileID: 87999922}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -2744,6 +2894,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StatusFilter: 0
+  UsePoseSmoothing: 0
+  AnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 3.3333333
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.3
+      value: 1
+      inSlope: 3.3333333
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
       m_Calls:
@@ -2779,6 +2954,35 @@ MonoBehaviour:
   mDataSetPath: Vuforia/SENSAR.xml
   mSize: {x: 0, y: 0, z: 0}
   mMotionHint: 1
+--- !u!21 &2122208406
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'QR_Cube.Right_scaledMaterial
+
+    172310'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 68f6c7ab518c42209cf5f6b1f5f088bc, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &487462951733711136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2997,17 +3201,53 @@ PrefabInstance:
     m_TransformParent: {fileID: 813670966}
     m_Modifications:
     - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
-      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[5].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1519372708}
     - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
-      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1486786940}
     - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
-      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 99615710}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 448896295}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 448896295}
     - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
       propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 
@@ -3016,6 +3256,86 @@ PrefabInstance:
       propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[6].m_Target
       value: 
       objectReference: {fileID: 448896295}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: UpdateCollection
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: set_ConnectionCheck
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: SetIPAddress
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: SetIPAddress
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Microsoft.MixedReality.Toolkit.Utilities.BaseObjectCollection, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: ROSProfileConnection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: ROSProfileConnection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4177446469106031820, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3063,6 +3383,10 @@ PrefabInstance:
     - target: {fileID: 5738293790015259897, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
       propertyPath: m_Name
       value: Robot Connect Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299994062840100445, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: m_text
+      value: 192.168.0.18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
@@ -3512,6 +3836,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ToggleList: {fileID: 5748216169355709941}
+--- !u!4 &6841202586283193503 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2346091452026879766, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+  m_PrefabInstance: {fileID: 8727976403471623428}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7566084422088973238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3601,7 +3930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2395656966050746434, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2395656966105973682, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
       propertyPath: m_IsActive
@@ -3850,9 +4179,13 @@ PrefabInstance:
     - target: {fileID: 4828038708062810932, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 755074211}
+      objectReference: {fileID: 263576965}
     - target: {fileID: 4828038708062810933, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
       propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828038708062810955, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+      propertyPath: m_text
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5078967311827906463, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
@@ -3969,3 +4302,171 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+--- !u!1001 &8727976403471623428
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 599247866}
+    m_Modifications:
+    - target: {fileID: 2151104154061280600, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_Text
+      value: 'Kobuki Base
+
+        Orbbec Astra Pro
+
+        Asus Laptop (ROS Compatible)
+
+        Kinect
+        Mounting Hardware
+
+        TurtleBot Structure
+
+        TurtleBot Module
+        Plate with 1 inch Spacing Hole Pattern
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346091452026879766, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346091452026879766, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.36670014
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346091452026879766, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.36670014
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346091452026879766, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.36670014
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346091452026879766, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346091452026879766, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.163
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346091452026879766, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346091452026879766, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346091452026879766, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346091452026879766, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346091452026879766, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346091452026879766, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346091452026879766, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346091452026879766, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346091452026879767, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_Name
+      value: SceneDescriptionPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2656633479161360869, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.043
+      objectReference: {fileID: 0}
+    - target: {fileID: 2656813549876557225, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.155
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680138888771102863, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f86cec478ab8cd94492cc3a53413561b, type: 3}
+    - target: {fileID: 2762186600038563959, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_Text
+      value: Hardware
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762191233750766591, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_Text
+      value: Software
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762204790559250749, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_Text
+      value: 'Robot: Turtlebot2'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762637924729459247, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762883803629562199, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_Text
+      value: 'Part of the SENSAR Project
+
+        Contact: andre.cleaver@tufts.edu'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2762987111769805389, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_Text
+      value: MuLIP Lab
+      objectReference: {fileID: 0}
+    - target: {fileID: 2763163813610301307, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_Text
+      value: "Description\nTurtleBot 2 is the world\u2019s most popular low cost,
+        open source robot for education and research. This second generation personal
+        robot is equipped with a powerful Kobuki robot base, a dual-core netbook,
+        Orbbec Astra Pro Sensor and a gyroscope\n\n\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865767479818603513, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_Name
+      value: Logo
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866142135589313151, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_Name
+      value: Project Owner
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866321644885394745, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_Name
+      value: Owner Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869098832184691161, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.117240876
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869098832184691161, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.117240876
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869098832184691161, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.117240876
+      objectReference: {fileID: 0}
+    - target: {fileID: 3928558407206989099, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}
+      propertyPath: m_Text
+      value: 'An SDK for the TurtleBot
+
+        A development environment for the
+        desktop
+
+        Libraries for visualization, planning, and perception,
+        control and error handling.
+
+        Demo applications'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2ff5804566c1f4241bac813eea42a03d, type: 3}

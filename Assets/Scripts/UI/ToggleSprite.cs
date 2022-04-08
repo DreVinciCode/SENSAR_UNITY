@@ -7,6 +7,7 @@ public class ToggleSprite : MonoBehaviour
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        SetSpriteColor();
     }
 
     public void SwapSprite(Sprite spriteImage)
@@ -19,8 +20,25 @@ public class ToggleSprite : MonoBehaviour
         spriteRenderer.enabled = false;
     }
 
-    public void unlockedSprite()
+    public void activateSprite()
     {
-        spriteRenderer.color = Color.white;
+        spriteRenderer.enabled = true;
+    }
+
+    public void SetSpriteColor()
+    {
+        var status = GameManager.Userstatus;
+        if (status == GameManager.State.Locked)
+        {
+            spriteRenderer.color = Color.red;
+        }
+        else if (status == GameManager.State.OrdinaryUser)
+        {
+            spriteRenderer.color = Color.green;
+        }
+        else if(status == GameManager.State.SuperUser)
+        {
+            spriteRenderer.color = Color.black;
+        }
     }
 }

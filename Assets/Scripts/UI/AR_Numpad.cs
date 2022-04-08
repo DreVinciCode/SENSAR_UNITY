@@ -5,10 +5,14 @@ using UnityEngine.Events;
 public class AR_Numpad : MonoBehaviour
 {
     public TMP_Text IPDisplay;
-    public UnityEvent OnAccessGranted;
+    public UnityEvent OnSuperUserAccess;
+    public UnityEvent OnOrdinaryUserAccess;
+    public UnityEvent OnLockedStatus;
 
     private string _pinCode = "";
-    private string _code = "1234";
+    private string _superUserCode = "1234";
+    private string _ordinaryUserCode = "4321";
+    private string _lockCode = "0000";
 
     private void Start()
     {
@@ -81,9 +85,17 @@ public class AR_Numpad : MonoBehaviour
                 break;
         }
 
-        if(_pinCode == _code)
+        if(_pinCode == _superUserCode)
         {
-            OnAccessGranted.Invoke();
+            OnSuperUserAccess.Invoke();                
+        }
+        else if (_pinCode == _ordinaryUserCode)
+        {
+            OnOrdinaryUserAccess.Invoke();
+        }
+        else if (_pinCode == _lockCode)
+        {
+            OnLockedStatus.Invoke();
         }
     }
 }

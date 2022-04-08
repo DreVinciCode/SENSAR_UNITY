@@ -18,37 +18,32 @@ public class TouchInteraction : MonoBehaviour, IMixedRealityTouchHandler
     private float _currentTime = 0f;
     private bool _locked;
 
-    public bool SuperUser { get; set; }
-
     private void Start()
     {
         _locked = true;
-        SuperUser = false;
+
     }
 
     void IMixedRealityTouchHandler.OnTouchStarted(HandTrackingInputEventData eventData)
-    {
-        if (!_locked)
+    {     
+        if (_locked && GameManager.Userstatus == GameManager.State.SuperUser)
         {
             _currentTime = 0f;
             ConnectRing.fillAmount = 0;
-            _locked = !_locked;
-
         }
     }
     void IMixedRealityTouchHandler.OnTouchCompleted(HandTrackingInputEventData eventData)
     {
-        if (_locked)
+        if (_locked && GameManager.Userstatus == GameManager.State.SuperUser)
         {
-            ConnectRing.fillAmount = 0; 
+            ConnectRing.fillAmount = 0;
             _currentTime = 0f;
         }
     }
 
     void IMixedRealityTouchHandler.OnTouchUpdated(HandTrackingInputEventData eventData)
     {
-        //OnTouchUpdated.Invoke(eventData);
-        if (_locked)
+        if (_locked && GameManager.Userstatus == GameManager.State.SuperUser)
         {
             StartCoroutine(Timer(_duration));
             _currentTime += Time.deltaTime;

@@ -60,13 +60,13 @@ namespace RosSharp.RosBridgeClient
 
             if (!IsConnected.WaitOne(SecondsTimeout * 100))
             {
-                ConnectionStatus = false;
+                //ConnectionStatus = false;
                 Debug.LogWarning("Failed to connect to RosBridge at: " + RosBridgeServerUrl);
             }
             else
             {
                 //call the UI Button somehow, I tried using UnityEvents but I get errors about running in main thread.
-                ConnectionStatus = true;
+                //ConnectionStatus = true;
             }
         }
 
@@ -87,12 +87,14 @@ namespace RosSharp.RosBridgeClient
         private void OnConnected(object sender, EventArgs e)
         {
             IsConnected.Set();
+            ConnectionStatus = true;
             Debug.Log("Connected to RosBridge: " + RosBridgeServerUrl);
         }
 
         private void OnClosed(object sender, EventArgs e)
         {
             IsConnected.Reset();
+            ConnectionStatus = false;
             Debug.Log("Disconnected from RosBridge: " + RosBridgeServerUrl);
         }
     }
