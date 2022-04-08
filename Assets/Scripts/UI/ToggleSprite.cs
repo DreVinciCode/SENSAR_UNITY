@@ -1,13 +1,15 @@
+using TMPro;
 using UnityEngine;
 
 public class ToggleSprite : MonoBehaviour
 {
+    public TMP_Text UserStatusText;
+
     private SpriteRenderer spriteRenderer;
 
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        SetSpriteColor();
     }
 
     public void SwapSprite(Sprite spriteImage)
@@ -31,14 +33,17 @@ public class ToggleSprite : MonoBehaviour
         if (status == GameManager.State.Locked)
         {
             spriteRenderer.color = Color.red;
+            UserStatusText.text = status.ToString();
         }
         else if (status == GameManager.State.OrdinaryUser)
         {
             spriteRenderer.color = Color.green;
+            UserStatusText.text = status.ToString();
         }
         else if(status == GameManager.State.SuperUser)
         {
-            spriteRenderer.color = Color.black;
+            spriteRenderer.color = Color.blue;
+            UserStatusText.text = status.ToString();
         }
     }
 }

@@ -7,12 +7,10 @@ public class AR_Numpad : MonoBehaviour
     public TMP_Text IPDisplay;
     public UnityEvent OnSuperUserAccess;
     public UnityEvent OnOrdinaryUserAccess;
-    public UnityEvent OnLockedStatus;
 
     private string _pinCode = "";
     private string _superUserCode = "1234";
     private string _ordinaryUserCode = "4321";
-    private string _lockCode = "0000";
 
     private void Start()
     {
@@ -92,10 +90,6 @@ public class AR_Numpad : MonoBehaviour
         else if (_pinCode == _ordinaryUserCode)
         {
             OnOrdinaryUserAccess.Invoke();
-        }
-        else if (_pinCode == _lockCode)
-        {
-            OnLockedStatus.Invoke();
         }
     }
 }

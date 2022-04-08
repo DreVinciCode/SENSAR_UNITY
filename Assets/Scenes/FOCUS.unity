@@ -239,7 +239,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2122208406}
+  - {fileID: 1238271388}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -261,6 +261,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!21 &97452896
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'QR_Cube.Left_scaledMaterial
+
+    31092'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 95925e50112d4317bf6b3112cb78ca67, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &99615710
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,7 +500,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 134096587}
+  - {fileID: 97452896}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -493,35 +522,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!21 &134096587
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Left_scaledMaterial
-
-    172310'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 95925e50112d4317bf6b3112cb78ca67, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!43 &215205294
 Mesh:
   m_ObjectHideFlags: 0
@@ -686,51 +686,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &248352817
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 248352819}
-  - component: {fileID: 248352818}
-  m_Layer: 0
-  m_Name: MixedRealityToolkit
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &248352818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 248352817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83d9acc7968244a8886f3af591305bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeProfile: {fileID: 11400000, guid: e56e5b8f5efb0004c93d9eacef111565, type: 2}
---- !u!4 &248352819
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 248352817}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &263576965
+--- !u!21 &215687882
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -833,6 +789,61 @@ Material:
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_BuildTextureStacks: []
+--- !u!1 &248352817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 248352819}
+  - component: {fileID: 248352818}
+  m_Layer: 0
+  m_Name: MixedRealityToolkit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &248352818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248352817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83d9acc7968244a8886f3af591305bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeProfile: {fileID: 11400000, guid: e56e5b8f5efb0004c93d9eacef111565, type: 2}
+--- !u!4 &248352819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248352817}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &270059937 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2545537280947756472, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+  m_PrefabInstance: {fileID: 2213439604665970345}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &421889071
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,7 +925,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1466287419}
+      - m_Target: {fileID: 1801909404}
         m_TargetAssemblyTypeName: ToggleSprite, Assembly-CSharp
         m_MethodName: SetSpriteColor
         m_Mode: 1
@@ -925,6 +936,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1078920201}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5205937833325349876}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
   OnOrdinaryUserAccess:
     m_PersistentCalls:
@@ -941,7 +976,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1466287419}
+      - m_Target: {fileID: 1801909404}
         m_TargetAssemblyTypeName: ToggleSprite, Assembly-CSharp
         m_MethodName: SetSpriteColor
         m_Mode: 1
@@ -953,13 +988,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnLockedStatus:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1097752335}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LockedStatus
-        m_Mode: 1
+      - m_Target: {fileID: 1078920201}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -968,17 +1000,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1466287419}
-        m_TargetAssemblyTypeName: ToggleSprite, Assembly-CSharp
-        m_MethodName: SetSpriteColor
-        m_Mode: 1
+      - m_Target: {fileID: 5205937833325349876}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!82 &445306748 stripped
 AudioSource:
@@ -1344,6 +1376,7 @@ GameObject:
   - component: {fileID: 599247866}
   - component: {fileID: 599247868}
   - component: {fileID: 599247867}
+  - component: {fileID: 599247869}
   m_Layer: 0
   m_Name: Robot Description
   m_TagString: Untagged
@@ -1409,6 +1442,18 @@ MonoBehaviour:
   additionalOffset: {x: 0, y: 0, z: 0}
   additionalRotation: {x: 0, y: 0, z: 0}
   updateSolvers: 1
+--- !u!114 &599247869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599247865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7be6bdab104894193d0c58ec4a6a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &606876272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1567,6 +1612,35 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!21 &642425143
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'QR_Cube.Front_scaledMaterial
+
+    31092'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 9eade0f7e2f943eaaa8835a813ee2e03, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &732240235 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 459487310535110631, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
@@ -1577,6 +1651,35 @@ ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 2284788624954422944, guid: e8e1393d824026f4f89c05901ac193c5, type: 3}
   m_PrefabInstance: {fileID: 552805790}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &771161162
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'QR_Cube.Bottom_scaledMaterial
+
+    31092'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 4d5483a38aaf46e38f07acc5dfb80aec, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &813670965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1653,6 +1756,35 @@ MonoBehaviour:
   additionalOffset: {x: 0, y: 0, z: 0}
   additionalRotation: {x: 0, y: 0, z: 0}
   updateSolvers: 1
+--- !u!21 &943799978
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'QR_Cube.Back_scaledMaterial
+
+    31092'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 1226c54eca664e3b8efc716438d05bd7, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &953086431
 Material:
   serializedVersion: 6
@@ -1756,6 +1888,11 @@ Material:
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_BuildTextureStacks: []
+--- !u!212 &1011706586 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8321525727415919511, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+  m_PrefabInstance: {fileID: 2213439604665970345}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1078920201 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9023940030649017690, guid: 8be994fd91fd5a44fbfbcb27e34e8557, type: 3}
@@ -1790,6 +1927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f35ed4b9656cee340876b1b125999d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 1801909403}
+  UserstatusText: {fileID: 1602481953}
 --- !u!4 &1097752336
 Transform:
   m_ObjectHideFlags: 0
@@ -1922,7 +2061,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1651961279}
+  - {fileID: 642425143}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1977,6 +2116,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1238271388
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'QR_Cube.Right_scaledMaterial
+
+    31092'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 68f6c7ab518c42209cf5f6b1f5f088bc, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!4 &1238641710 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2395656965072281652, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
@@ -2055,7 +2223,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1351632861}
+  - {fileID: 943799978}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2150,7 +2318,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1664651935}
+  - {fileID: 1932035612}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2172,35 +2340,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!21 &1351632861
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Back_scaledMaterial
-
-    172310'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1226c54eca664e3b8efc716438d05bd7, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &1404870275
 GameObject:
   m_ObjectHideFlags: 0
@@ -2335,35 +2474,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404870275}
   m_CullTransparentMesh: 1
---- !u!21 &1407176855
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Bottom_scaledMaterial
-
-    172310'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4d5483a38aaf46e38f07acc5dfb80aec, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!114 &1466287419 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1466287419, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
@@ -2396,64 +2506,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9023940031814096172, guid: 8be994fd91fd5a44fbfbcb27e34e8557, type: 3}
   m_PrefabInstance: {fileID: 487462951733711136}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1651961279
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!114 &1602481953 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4828038708062810955, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+  m_PrefabInstance: {fileID: 7566084422088973238}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Front_scaledMaterial
-
-    172310'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 9eade0f7e2f943eaaa8835a813ee2e03, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &1664651935
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Top_scaledMaterial
-
-    172310'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 6eeb14f28ca64805981d541a91e56714, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1666552288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2559,6 +2622,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5621880632562225936, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
   m_PrefabInstance: {fileID: 7566084422088973238}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &1801909403 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2511147029249268545, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+  m_PrefabInstance: {fileID: 7566084422088973238}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1801909404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2571,6 +2639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cce7ef67dc757934796d4c7a96a8149b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UserStatusText: {fileID: 1602481953}
 --- !u!1 &1837849827
 GameObject:
   m_ObjectHideFlags: 0
@@ -2739,6 +2808,35 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!21 &1932035612
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'QR_Cube.Top_scaledMaterial
+
+    31092'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 6eeb14f28ca64805981d541a91e56714, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!114 &2045423057 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6299994062840100445, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
@@ -2823,7 +2921,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1407176855}
+  - {fileID: 771161162}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2954,35 +3052,6 @@ MonoBehaviour:
   mDataSetPath: Vuforia/SENSAR.xml
   mSize: {x: 0, y: 0, z: 0}
   mMotionHint: 1
---- !u!21 &2122208406
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Right_scaledMaterial
-
-    172310'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 68f6c7ab518c42209cf5f6b1f5f088bc, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1001 &487462951733711136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3201,8 +3270,36 @@ PrefabInstance:
     m_TransformParent: {fileID: 813670966}
     m_Modifications:
     - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: setSatus
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: rosConnection
+      value: 
+      objectReference: {fileID: 448896295}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 1011706586}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: RequiredUserStatus
+      value: 
+      objectReference: {fileID: 270059937}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: requiredUserStatus
+      value: 
+      objectReference: {fileID: 270059937}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnTounchComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
       propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.size
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnTounchComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
       propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -3228,6 +3325,10 @@ PrefabInstance:
       propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[5].m_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnTounchComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 599247869}
     - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
       propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3257,6 +3358,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 448896295}
     - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnTounchComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnTounchComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TogglePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
       propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
@@ -3281,6 +3390,10 @@ PrefabInstance:
       value: SetIPAddress
       objectReference: {fileID: 0}
     - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnTounchComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AR_TogglePanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
       propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
@@ -3299,6 +3412,10 @@ PrefabInstance:
     - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
       propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
       value: ROSProfileConnection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnTounchComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
       propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
@@ -3329,6 +3446,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: OnTounchComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 10424260, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
       propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -3336,6 +3457,10 @@ PrefabInstance:
       propertyPath: OnConnectComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1466287419, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: UserStatusText
+      value: 
+      objectReference: {fileID: 270059937}
     - target: {fileID: 4177446469106031820, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3387,6 +3512,22 @@ PrefabInstance:
     - target: {fileID: 6299994062840100445, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
       propertyPath: m_text
       value: 192.168.0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321525727415919511, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0ef85c69828f98742a33409c47116899, type: 3}
+    - target: {fileID: 8504354623390181283, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.001842338
+      objectReference: {fileID: 0}
+    - target: {fileID: 8504354623390181283, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.001842338
+      objectReference: {fileID: 0}
+    - target: {fileID: 8504354623390181283, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.001842338
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7216ad69bd7eaec4392f7db35af3d1a1, type: 3}
@@ -3940,6 +4081,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2511147029249268545, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+      propertyPath: m_Size.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2511147029249268545, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+      propertyPath: m_Size.y
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2511147029249268545, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0ef85c69828f98742a33409c47116899, type: 3}
+    - target: {fileID: 2511147029249268545, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2511147029249268545, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2511147029249268545, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2613120305185377304, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -4176,17 +4341,45 @@ PrefabInstance:
       propertyPath: InteractableOnClick
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4828038707576562363, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+      propertyPath: m_Name
+      value: User_Button
+      objectReference: {fileID: 0}
     - target: {fileID: 4828038708062810932, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 263576965}
+      objectReference: {fileID: 215687882}
     - target: {fileID: 4828038708062810933, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4828038708062810952, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0.05341
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828038708062810952, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.00015
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828038708062810952, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0121
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828038708062810953, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+      propertyPath: m_Name
+      value: UserStatusText
+      objectReference: {fileID: 0}
     - target: {fileID: 4828038708062810955, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
       propertyPath: m_text
-      value: 
+      value: Status
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828038708062810955, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+      propertyPath: m_fontSize
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828038708062810955, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 5078967311827906463, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -4243,6 +4436,18 @@ PrefabInstance:
     - target: {fileID: 5621880632562225936, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714199951725846294, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.0039590597
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714199951725846294, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0039590597
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714199951725846294, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0039590597
       objectReference: {fileID: 0}
     - target: {fileID: 7490572160906846157, guid: d3a92d50543686342b05ad95b9d7c9f2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4463,8 +4668,8 @@ PrefabInstance:
         A development environment for the
         desktop
 
-        Libraries for visualization, planning, and perception,
-        control and error handling.
+        Libraries for visualization, planning, and perception, control
+        and error handling.
 
         Demo applications'
       objectReference: {fileID: 0}
