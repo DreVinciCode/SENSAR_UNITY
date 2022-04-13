@@ -14,6 +14,10 @@ Robotic data that SENSAR can currently display include:
 - Localization Points
 - Loaded Map of Environment
 - Diagnostic Information
+- Camera
+
+![Alt text](Demo/demo2.gif)
+<br/> SENSARv2 includes an ARViz-like panel
 
 ![Alt text](Demo/demo.gif)
 <br/> A Short Demo of Current Progress

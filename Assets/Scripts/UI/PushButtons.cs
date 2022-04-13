@@ -11,7 +11,7 @@ public class PushButtons : MonoBehaviour
     private int _dividerPosition;
     private string _buttonName, _buttonValue;
 
-    void Start()
+    private void Start()
     {
         _buttonName = gameObject.name;
         _dividerPosition = _buttonName.IndexOf("_");
