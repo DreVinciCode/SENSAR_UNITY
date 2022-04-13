@@ -145,6 +145,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ab870e2ddf864b4187b6c3e6e61db81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!21 &60462978
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'QR_Cube.Top_scaledMaterial
+
+    66236'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 5a9b1463f2b447c99937beba429331a5, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &130910856
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,35 +604,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 393f18f670828f54f86e625d2bdd0719, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &220355892
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Left_scaledMaterial
-
-    69744'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 95925e50112d4317bf6b3112cb78ca67, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &236738566 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3179704213067961372, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
@@ -847,35 +847,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &635150580
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Front_scaledMaterial
-
-    69744'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 9eade0f7e2f943eaaa8835a813ee2e03, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &735205382 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3179704213842683105, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
@@ -1024,16 +995,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &849889792
+--- !u!21 &825777119
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Top_scaledMaterial
+  m_Name: 'QR_Cube.Bottom_scaledMaterial
 
-    69744'
+    66236'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -1046,7 +1017,36 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 6eeb14f28ca64805981d541a91e56714, type: 3}
+        m_Texture: {fileID: 2800000, guid: a92c8f0f8bbe4d9eaa6ba6e2b604b71e, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &831515680
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'QR_Cube.Right_scaledMaterial
+
+    66236'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 3952482cbfe84ec1af4ec880acda73f0, type: 3}
         m_Scale: {x: -1, y: -1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -1248,35 +1248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb64e2e126e45a841b84bdd797701aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &945337159
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Right_scaledMaterial
-
-    69744'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 68f6c7ab518c42209cf5f6b1f5f088bc, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!114 &980660371 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9001454341637580315, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
@@ -1395,35 +1366,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e03a9aedf3141d4db6012e1f3a6d40d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &1136545209
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Back_scaledMaterial
-
-    69744'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1226c54eca664e3b8efc716438d05bd7, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!114 &1150334272 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 590217686979910135, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
@@ -4022,6 +3964,35 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7822831615047169361, guid: 043c5a08fecc491c8951e150ac165122, type: 3}
   m_PrefabInstance: {fileID: 1731606602}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &1751987841
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'QR_Cube.Front_scaledMaterial
+
+    66236'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: e0cbb198816b4e6491557a57fdfce482, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1766786181
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5194,6 +5165,10 @@ PrefabInstance:
     - target: {fileID: 3179704214527316219, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
       propertyPath: m_text
       value: Connect Robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3180984681842692198, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
+      propertyPath: Topic
+      value: /SENSAR/robotstate_color
       objectReference: {fileID: 0}
     - target: {fileID: 3180984681842692198, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
       propertyPath: m_Enabled
@@ -7660,6 +7635,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!21 &1804838696
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'QR_Cube.Left_scaledMaterial
+
+    66236'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: ce531456def04b8bbd3776103e360e3c, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1860296730
 GameObject:
   m_ObjectHideFlags: 0
@@ -7940,16 +7944,16 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!21 &2038673164
+--- !u!21 &1992386929
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Bottom_scaledMaterial
+  m_Name: 'QR_Cube.Back_scaledMaterial
 
-    69744'
+    66236'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -7962,7 +7966,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4d5483a38aaf46e38f07acc5dfb80aec, type: 3}
+        m_Texture: {fileID: 2800000, guid: 195d7336b22642b4a7c4279d26ef1a7d, type: 3}
         m_Scale: {x: -1, y: -1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -8125,7 +8129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 281223175565520466, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_UiScaleMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 281223175565520466, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_MatchWidthOrHeight
@@ -8133,11 +8137,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 281223175565520466, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_ReferenceResolution.x
-      value: 1000
+      value: 2560
       objectReference: {fileID: 0}
     - target: {fileID: 281223175565520466, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_ReferenceResolution.y
-      value: 625
+      value: 1600
+      objectReference: {fileID: 0}
+    - target: {fileID: 281223175565520466, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 786966429186469376, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_IsActive
@@ -8214,11 +8222,11 @@ PrefabInstance:
     - target: {fileID: 6281903151066459391, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 945337159}
+      objectReference: {fileID: 831515680}
     - target: {fileID: 6281903151118594032, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2038673164}
+      objectReference: {fileID: 825777119}
     - target: {fileID: 6281903151118594036, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Name
       value: QR_Cube.Bottom
@@ -8262,7 +8270,7 @@ PrefabInstance:
     - target: {fileID: 6281903151255120053, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1136545209}
+      objectReference: {fileID: 1992386929}
     - target: {fileID: 6281903151816687552, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -8350,7 +8358,7 @@ PrefabInstance:
     - target: {fileID: 6281903152213382062, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 220355892}
+      objectReference: {fileID: 1804838696}
     - target: {fileID: 6281903152417777305, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Name
       value: QR_Cube.Front
@@ -8374,7 +8382,7 @@ PrefabInstance:
     - target: {fileID: 6281903152417777317, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 635150580}
+      objectReference: {fileID: 1751987841}
     - target: {fileID: 6281903152747335985, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -8382,7 +8390,7 @@ PrefabInstance:
     - target: {fileID: 6281903152747335986, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 849889792}
+      objectReference: {fileID: 60462978}
     - target: {fileID: 6281903152747335990, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Name
       value: QR_Cube.Top
@@ -8429,7 +8437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8176608837566965059, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8176608837566965059, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_AnchorMin.x
@@ -8437,35 +8445,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8176608837566965059, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8176608837566965059, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 990.48
+      value: 1280
       objectReference: {fileID: 0}
     - target: {fileID: 8176608837566965059, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 650
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 8176608837566965059, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.64784
+      value: 1.0788568
       objectReference: {fileID: 0}
     - target: {fileID: 8176608837566965059, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.64784
+      value: 1.0788568
       objectReference: {fileID: 0}
     - target: {fileID: 8176608837566965059, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.64784
+      value: 1.0788568
       objectReference: {fileID: 0}
     - target: {fileID: 8176608837566965059, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -320.83408
+      value: -771
       objectReference: {fileID: 0}
     - target: {fileID: 8176608837566965059, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000011444092
+      value: -776
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
