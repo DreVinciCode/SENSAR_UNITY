@@ -39,7 +39,7 @@ namespace RosSharp.RosBridgeClient
                 var PersonMarker = Instantiate(PersonObject, _parent.transform);
                 var reliability_text = PersonMarker.GetComponentInChildren<TMP_Text>();         
                 reliability_text.text = System.Math.Round(float.Parse(person.text), 2).ToString();
-                PersonMarker.transform.localPosition = position;
+                PersonMarker.transform.localPosition = position + Offset;
                 PersonMarker.name = person.text;
             }
 
