@@ -8,7 +8,8 @@ namespace RosSharp.RosBridgeClient
         [SerializeField] private FixedJoystick _joystick;
         [SerializeField] private Button _increaseButton;
         [SerializeField] private Button _decreaseButton;
-        [SerializeField] private float _moveSpeed;
+        [SerializeField] private float _linearSpeed;
+        [SerializeField] private float _angularSpeed;
 
         private float _minSpeed = 0.1f;
         private float _maxSpeed = 0.8f;
@@ -24,15 +25,15 @@ namespace RosSharp.RosBridgeClient
 
         public void ChangeSpeed(float value)
         {
-            _moveSpeed += value;
+            _linearSpeed += value;
 
-            if (_moveSpeed > _maxSpeed)
+            if (_linearSpeed > _maxSpeed)
             {
-                _moveSpeed = _maxSpeed;
+                _linearSpeed = _maxSpeed;
             }
-            else if(_moveSpeed < _minSpeed)
+            else if(_linearSpeed < _minSpeed)
             {
-                _moveSpeed = _minSpeed;
+                _linearSpeed = _minSpeed;
             }
         }
 
@@ -45,8 +46,8 @@ namespace RosSharp.RosBridgeClient
 
         private void PublishMessage()
         {
-            Vector3 linearVelocity = new Vector3(_joystick.Vertical * _moveSpeed, 0f, 0f);
-            Vector3 angularVelocity = new Vector3(0f, 0f, _joystick.Horizontal * _moveSpeed);
+            Vector3 linearVelocity = new Vector3(_joystick.Vertical * _linearSpeed, 0f, 0f);
+            Vector3 angularVelocity = new Vector3(0f, 0f, _joystick.Horizontal * _angularSpeed);
 
             message.linear = GetGeometryVector3(linearVelocity);
             message.angular = GetGeometryVector3(-angularVelocity);
