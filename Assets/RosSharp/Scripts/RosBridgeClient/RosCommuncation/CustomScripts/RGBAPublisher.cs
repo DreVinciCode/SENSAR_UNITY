@@ -23,31 +23,36 @@ namespace RosSharp.RosBridgeClient
                 case 0: //red
                     message.r = 255f;
                     message.g = 0;
-                    message.b = 0; 
+                    message.b = 0;
+                    message.a = 2;
                     break;
 
                 case 1: //blue
                     message.r = 0;
                     message.g = 0;
                     message.b = 255f;
+                    message.a = 2;
                     break;
 
                 case 2: //green
                     message.r = 0;
                     message.g = 255f;
                     message.b = 0;
+                    message.a = 2;
                     break;
 
                 case 3: //white
                     message.r = 255f;
                     message.g = 255f;
                     message.b = 255f;
+                    message.a = 2;
                     break;
 
                 case 4: // yellow
                     message.r = 255f;
                     message.g = 255f;
                     message.b = 0;
+                    message.a = 2;
                     break;
             }
 

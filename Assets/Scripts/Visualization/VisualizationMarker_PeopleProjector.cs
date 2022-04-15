@@ -35,11 +35,12 @@ namespace RosSharp.RosBridgeClient
             for (int i = 0; i < _totalCount; i++)
             {
                 var person = _markers[i];
+                var duration = person.lifetime;
                 var position = GetPosition(person.pose).Ros2Unity();
                 var PersonMarker = Instantiate(PersonObject, _parent.transform);
                 var reliability_text = PersonMarker.GetComponentInChildren<TMP_Text>();         
-                reliability_text.text = System.Math.Round(float.Parse(person.text), 2).ToString();
-                PersonMarker.transform.localPosition = position;
+                //reliability_text.text = System.Math.Round(float.Parse(person.text), 2).ToString();
+                PersonMarker.transform.localPosition = position + Offset;
                 PersonMarker.name = person.text;
             }
 

@@ -236,7 +236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6322327153922340242
 RectTransform:
   m_ObjectHideFlags: 0
@@ -336,7 +336,7 @@ MonoBehaviour:
   transformOverride: {fileID: 8403006941336732594}
   additionalOffset: {x: 0, y: 0, z: 0}
   additionalRotation: {x: 0, y: 0, z: 0}
-  updateSolvers: 0
+  updateSolvers: 1
 --- !u!114 &3983317315073896706
 MonoBehaviour:
   m_ObjectHideFlags: 0
