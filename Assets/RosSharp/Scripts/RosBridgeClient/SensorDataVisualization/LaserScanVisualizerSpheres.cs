@@ -71,5 +71,10 @@ namespace RosSharp.RosBridgeClient
             IsCreated = false;
         }
 
+        public void DestroyChildren()
+        {
+            DestroyObjects();
+        }
+
     }
 }
