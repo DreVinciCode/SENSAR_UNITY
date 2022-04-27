@@ -15,7 +15,7 @@ namespace RosSharp.RosBridgeClient
 
         private void Start()
         {
-            _displayLine = true;
+            _displayLine = false;
             lineRenderer.startWidth = 0.005f;
         }
 
@@ -47,11 +47,15 @@ namespace RosSharp.RosBridgeClient
 
             waypoints[_totalPoints] = new Vector3((float)_points[0].x, (float)_points[0].y, (float)_points[0].z).Ros2Unity();
             lineRenderer.SetPositions(waypoints);
-            
-            if(_displayLine)        
-                lineRenderer.enabled = true;         
-            else        
+
+            if (_displayLine)
+            {
+                lineRenderer.enabled = true;
+            }
+            else
+            {
                 lineRenderer.enabled = false;
+            }
             
             _isMessageReceived = false;
         }
