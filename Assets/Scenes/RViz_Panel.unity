@@ -558,7 +558,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5440248764933176325, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
   m_PrefabInstance: {fileID: 1766786181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 674905c842c0a1d4c8107849ef8b7efc, type: 3}
@@ -569,7 +569,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1044465251177495168, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
   m_PrefabInstance: {fileID: 1766786181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 393f18f670828f54f86e625d2bdd0719, type: 3}
@@ -693,7 +693,73 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
---- !u!21 &306959677
+--- !u!1 &332721783 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6126083402329654613, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
+  m_PrefabInstance: {fileID: 6281903152620548676}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &332721787 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 7732415315827704531, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
+  m_PrefabInstance: {fileID: 6281903152620548676}
+  m_PrefabAsset: {fileID: 0}
+--- !u!21 &345036022
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'QR_Cube.Right_scaledMaterial
+
+    -2690'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 3952482cbfe84ec1af4ec880acda73f0, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
+--- !u!114 &349425426 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6324297488310324388, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
+  m_PrefabInstance: {fileID: 1766786181}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe33d167373b3c4f9929b6ee8fd6cd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &349425427 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3404759631666428266, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
+  m_PrefabInstance: {fileID: 1766786181}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35deec0edf46cc64d9e0475d034d7ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &394292539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6490662285684982506, guid: 90cfb8b1c0128a340821769fc13a96d9, type: 3}
+  m_PrefabInstance: {fileID: 1241105247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!21 &439254951
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -702,7 +768,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 'QR_Cube.Top_scaledMaterial
 
-    -2692'
+    -2690'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -722,43 +788,6 @@ Material:
     m_Colors:
     - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
   m_BuildTextureStacks: []
---- !u!1 &332721783 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6126083402329654613, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
-  m_PrefabInstance: {fileID: 6281903152620548676}
-  m_PrefabAsset: {fileID: 0}
---- !u!223 &332721787 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 7732415315827704531, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
-  m_PrefabInstance: {fileID: 6281903152620548676}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &349425426 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6324297488310324388, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
-  m_PrefabInstance: {fileID: 1766786181}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fe33d167373b3c4f9929b6ee8fd6cd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &349425427 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3404759631666428266, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
-  m_PrefabInstance: {fileID: 1766786181}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35deec0edf46cc64d9e0475d034d7ca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &394292539 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6490662285684982506, guid: 90cfb8b1c0128a340821769fc13a96d9, type: 3}
-  m_PrefabInstance: {fileID: 1241105247}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &452152280 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4458276354452837609, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
@@ -847,7 +876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &581122204
+--- !u!21 &648417578
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -856,7 +885,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 'QR_Cube.Front_scaledMaterial
 
-    -2692'
+    -2690'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -876,41 +905,69 @@ Material:
     m_Colors:
     - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
   m_BuildTextureStacks: []
+--- !u!21 &704615962
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'QR_Cube.Left_scaledMaterial
+
+    -2690'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: ce531456def04b8bbd3776103e360e3c, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &735205382 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3179704213842683105, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
   m_PrefabInstance: {fileID: 1766786181}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &766788865
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+--- !u!21 &742826323
+Material:
   serializedVersion: 6
-  m_Component:
-  - component: {fileID: 766788866}
-  m_Layer: 0
-  m_Name: GoalPoints
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &766788866
-Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 766788865}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Name: 'QR_Cube.Bottom_scaledMaterial
+
+    -2690'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: a92c8f0f8bbe4d9eaa6ba6e2b604b71e, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &767035513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,7 +1267,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7860162115762204906, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
   m_PrefabInstance: {fileID: 1766786181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a47b5dad2c421e74cb2729ce4bf3ca30, type: 3}
@@ -1221,7 +1278,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7612528867591427949, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
   m_PrefabInstance: {fileID: 1766786181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca2d7904c5d906b4689860aef6a10ab9, type: 3}
@@ -1232,7 +1289,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4155285870592825384, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
   m_PrefabInstance: {fileID: 1766786181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c5ec6f0938ecab4aa552970c3397a2e, type: 3}
@@ -1243,7 +1300,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1368908721, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
   m_PrefabInstance: {fileID: 1766786181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb64e2e126e45a841b84bdd797701aff, type: 3}
@@ -1260,35 +1317,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555add57e65b59f4cbd422b500979791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &988744773
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Back_scaledMaterial
-
-    -2692'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 195d7336b22642b4a7c4279d26ef1a7d, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &1071073146 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 861809735441873276, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
@@ -3574,35 +3602,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4047485152928637154, guid: 90cfb8b1c0128a340821769fc13a96d9, type: 3}
   m_PrefabInstance: {fileID: 1241105247}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1242178478
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Bottom_scaledMaterial
-
-    -2692'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a92c8f0f8bbe4d9eaa6ba6e2b604b71e, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!114 &1251301372 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2518689310464721461, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
@@ -3826,16 +3825,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516423854}
   m_CullTransparentMesh: 1
---- !u!21 &1532034546
+--- !u!21 &1663110532
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Right_scaledMaterial
+  m_Name: 'QR_Cube.Back_scaledMaterial
 
-    -2692'
+    -2690'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -3848,36 +3847,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3952482cbfe84ec1af4ec880acda73f0, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &1632772034
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'QR_Cube.Left_scaledMaterial
-
-    -2692'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: ce531456def04b8bbd3776103e360e3c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 195d7336b22642b4a7c4279d26ef1a7d, type: 3}
         m_Scale: {x: -1, y: -1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -4890,6 +4860,14 @@ PrefabInstance:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3092524495627046134, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092524495627046134, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
+      propertyPath: pathProjector
+      value: 
+      objectReference: {fileID: 1833973466}
     - target: {fileID: 3179704213067961372, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -6445,6 +6423,10 @@ PrefabInstance:
       value: -111.024994
       objectReference: {fileID: 0}
     - target: {fileID: 5440248764933176325, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
+      propertyPath: Topic
+      value: /mobile_base/commands/velocity
+      objectReference: {fileID: 0}
+    - target: {fileID: 5440248764933176325, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
       propertyPath: _joystick
       value: 
       objectReference: {fileID: 1767278143}
@@ -7716,7 +7698,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9188604706297004651, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
   m_PrefabInstance: {fileID: 1766786181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc318a40b8347c448927772ad6221d81, type: 3}
@@ -7727,23 +7709,18 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3180984681842692198, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
   m_PrefabInstance: {fileID: 1766786181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 112596d665fe4c045aeb7c72e9a22f27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1766786184 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8084394128636613482, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
-  m_PrefabInstance: {fileID: 1766786181}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1766786185 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3888512438197673781, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
   m_PrefabInstance: {fileID: 1766786181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed0b55514b82f134b864aa39ee28d74d, type: 3}
@@ -7754,7 +7731,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2075845703378234950, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
   m_PrefabInstance: {fileID: 1766786181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43e988a06a3ae39468ac6393271c2c59, type: 3}
@@ -7765,7 +7742,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1212762916896104796, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
   m_PrefabInstance: {fileID: 1766786181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b94822dc53ca6c4d96b8e95034287a0, type: 3}
@@ -7776,7 +7753,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5989994161325068794, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
   m_PrefabInstance: {fileID: 1766786181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7afe6acd6db8f6f42ae58d09c0521077, type: 3}
@@ -7787,7 +7764,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7681503181179709501, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
   m_PrefabInstance: {fileID: 1766786181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5db6cb058f6a39a4eac474653f0db99f, type: 3}
@@ -7798,7 +7775,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1060701500570545439, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
   m_PrefabInstance: {fileID: 1766786181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28b5050562b2c494d86906dc006441da, type: 3}
@@ -7809,27 +7786,23 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3465865052195687932, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
   m_PrefabInstance: {fileID: 1766786181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14b8186d88d7e04408474f75b40b8ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1766786192
+--- !u!114 &1766786192 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3092524495627046134, guid: 55c0a74c44e62964b8beb50fd3170532, type: 3}
+  m_PrefabInstance: {fileID: 1766786181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766786184}
-  m_Enabled: 1
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39f9b75c8e5ee7446b49265a0f8ff37c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: /SENSAR/path
-  TimeStep: 0
-  pathProjector: {fileID: 1833973466}
 --- !u!224 &1767278142 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
@@ -7851,11 +7824,10 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1068873124267122057, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
   m_PrefabInstance: {fileID: 6281903152620548676}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1833973466
+--- !u!114 &1833973466 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7183162886172210296, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
+  m_PrefabInstance: {fileID: 6281903152620548676}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833973465}
   m_Enabled: 1
@@ -7863,9 +7835,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e81a67016bbb75947a712bde611f30ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PointObject: {fileID: 2929937859229027463, guid: 2d0d77d806ab317478ec9693d26da84f, type: 3}
-  _parent: {fileID: 6281903152620548683}
-  Offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1860296730
 GameObject:
   m_ObjectHideFlags: 0
@@ -8338,7 +8307,7 @@ PrefabInstance:
     - target: {fileID: 1928052056596572292, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: _goalParent
       value: 
-      objectReference: {fileID: 766788866}
+      objectReference: {fileID: 0}
     - target: {fileID: 1928683352367790324, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -8402,11 +8371,11 @@ PrefabInstance:
     - target: {fileID: 6281903151066459391, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1532034546}
+      objectReference: {fileID: 345036022}
     - target: {fileID: 6281903151118594032, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1242178478}
+      objectReference: {fileID: 742826323}
     - target: {fileID: 6281903151118594036, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Name
       value: QR_Cube.Bottom
@@ -8450,7 +8419,7 @@ PrefabInstance:
     - target: {fileID: 6281903151255120053, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 988744773}
+      objectReference: {fileID: 1663110532}
     - target: {fileID: 6281903151816687552, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -8658,7 +8627,7 @@ PrefabInstance:
     - target: {fileID: 6281903152213382062, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1632772034}
+      objectReference: {fileID: 704615962}
     - target: {fileID: 6281903152417777305, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Name
       value: QR_Cube.Front
@@ -8682,7 +8651,7 @@ PrefabInstance:
     - target: {fileID: 6281903152417777317, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 581122204}
+      objectReference: {fileID: 648417578}
     - target: {fileID: 6281903152747335985, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -8690,7 +8659,7 @@ PrefabInstance:
     - target: {fileID: 6281903152747335986, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 306959677}
+      objectReference: {fileID: 439254951}
     - target: {fileID: 6281903152747335990, guid: c4454933bfa2feb4f8ec0c194a2b0705, type: 3}
       propertyPath: m_Name
       value: QR_Cube.Top
