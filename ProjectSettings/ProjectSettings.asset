@@ -136,7 +136,6 @@ PlayerSettings:
     Others: 1
   bundleVersion: 0.1
   preloadedAssets:
-  - {fileID: -7337272986928224938, guid: 6124056b428d0664ea04b1fd0f444473, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -179,7 +178,7 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: -3582110627048386067, guid: 2c956e736fc510d4cbb66b94e5a96716, type: 2}
+  - {fileID: 0}
   - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -752,11 +751,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Template3D
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DreVinci Creations
+  metroCertificateIssuer: DreVinci Creations
+  metroCertificateNotAfter: 80ab2dc4cab9d901
   metroApplicationDescription: Template_3D
   wsaImages: {}
   metroTileShortName: SENSAR
