@@ -35,7 +35,8 @@ namespace RosSharp.RosBridgeClient
 
         private void PublishMessage()
         {
-            Vector3 linearVelocity = new Vector3((MoveSlider.SliderValue - sliderOffset) * _moveSpeed, 0f, 0f);
+            Debug.Log("slider value: " + (MoveSlider.SliderValue - sliderOffset));
+            Vector3 linearVelocity = new Vector3(-1*(MoveSlider.SliderValue - sliderOffset) * _moveSpeed, 0f, 0f);
             Vector3 angularVelocity = new Vector3(0f, 0f, (TurnSlider.SliderValue - sliderOffset) * _moveSpeed);
 
             message.linear = GetGeometryVector3(linearVelocity);
@@ -48,8 +49,8 @@ namespace RosSharp.RosBridgeClient
         {
             if (_publishMessageCheck)
             {
-                if (MoveSlider.SliderValue - sliderOffset != 0.0f && TurnSlider.SliderValue - sliderOffset != 0.0f)
-                    PublishMessage();
+                //if (MoveSlider.SliderValue - sliderOffset != 0.0f && TurnSlider.SliderValue - sliderOffset != 0.0f)
+                PublishMessage();
             }
         }
 
